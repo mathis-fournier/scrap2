@@ -1,9 +1,28 @@
 const db = require('../db');
 const logger = require('../logger');
 
+async function getUserSettings(req, res) {
+    const userId = req.user.userId;
+    try {
+        // Fetch vinted_cookie to check if it was wiped by the worker
+        const [users] = await db.execute('SELECT use_proxy, vinted_cookie FROM users WHERE id = ?', [userId]);
+        if (users.length > 0) {
+            res.json({
+                useProxy: Boolean(users[0].use_proxy),
+                hasCookie: !!users[0].vinted_cookie // Returns true if it exists, false if it is NULL or empty
+            });
+        } else {
+            res.status(404).json({ error: 'User not found' });
+        }
+    } catch (err) {
+        logger.error(err, 'getUserSettings failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
 async function saveUserSettings(req, res) {
     const userId = req.user.userId;
-    const { cookie } = req.body;
+    const { cookie, useProxy } = req.body;
 
     try {
         const [users] = await db.execute('SELECT proxy_url FROM users WHERE id = ?', [userId]);
@@ -22,12 +41,19 @@ async function saveUserSettings(req, res) {
             }
         }
 
-        await db.execute('UPDATE users SET vinted_cookie = ?, proxy_url = ? WHERE id = ?', [cookie, proxyToSave, userId]);
-        res.json({ success: true, message: 'Cookie saved and dedicated proxy secured!' });
+        // Force convert the boolean from frontend to 1 or 0 for MySQL
+        const useProxyValue = useProxy ? 1 : 0;
+
+        await db.execute(
+            'UPDATE users SET vinted_cookie = ?, proxy_url = ?, use_proxy = ? WHERE id = ?',
+            [cookie, proxyToSave, useProxyValue, userId]
+        );
+
+        res.json({ success: true, message: 'Settings saved successfully!' });
     } catch (err) {
         logger.error(err, 'saveUserSettings failed');
         res.status(500).json({ error: err.message });
     }
 }
 
-module.exports = { saveUserSettings };
+module.exports = { saveUserSettings, getUserSettings };

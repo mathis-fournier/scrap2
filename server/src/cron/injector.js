@@ -9,47 +9,53 @@ const scanQueue = new Queue('vinted-scan-queue', { connection: redisConnection }
 
 async function injectJobs() {
     try {
+        // Added u.use_proxy to the SELECT statement
         const [rows] = await db.execute(`
             SELECT 
-                u.id AS userId, u.vinted_cookie AS cookie, u.user_agent AS userAgent, u.proxy_url AS proxyUrl,
+                u.id AS userId, u.vinted_cookie AS cookie, u.user_agent AS userAgent, u.proxy_url AS proxyUrl, u.use_proxy AS useProxy,
                 k.id AS keywordId, k.name AS keywordName, k.api_url AS apiUrl
             FROM users u
             JOIN keywords k ON u.id = k.user_id
             WHERE u.vinted_cookie IS NOT NULL AND u.vinted_cookie != ''
         `);
 
-        if (rows.length === 0) {
-            return;
-        }
+        if (rows.length === 0) return;
 
-        const userBatches = {};
+        const urlBatches = {};
+
         for (const row of rows) {
-            if (!userBatches[row.userId]) {
-                userBatches[row.userId] = {
-                    userId: row.userId,
+            // Group by unique API URL instead of by User
+            if (!urlBatches[row.apiUrl]) {
+                urlBatches[row.apiUrl] = {
+                    jobId: Buffer.from(row.apiUrl).toString('base64').substring(0, 40),
+                    apiUrl: row.apiUrl,
+                    delegatedUserId: row.userId,
                     cookie: row.cookie,
                     userAgent: row.userAgent,
-                    proxyUrl: row.proxyUrl,
-                    keywords: []
+                    // If useProxy is false, force proxyUrl to null so local network is used
+                    proxyUrl: row.useProxy ? row.proxyUrl : null,
+                    subscribers: []
                 };
             }
-            userBatches[row.userId].keywords.push({
-                id: row.keywordId,
-                name: row.keywordName,
-                apiUrl: row.apiUrl
+
+            urlBatches[row.apiUrl].subscribers.push({
+                userId: row.userId,
+                keywordId: row.keywordId,
+                keywordName: row.keywordName
             });
         }
 
-        const users = Object.values(userBatches);
-        for (const userBatch of users) {
-            await scanQueue.add('user-scan-batch', userBatch, {
-                jobId: userBatch.userId,
+        const uniqueUrls = Object.values(urlBatches);
+
+        for (const urlBatch of uniqueUrls) {
+            await scanQueue.add('url-scan-job', urlBatch, {
+                jobId: urlBatch.jobId,
                 removeOnComplete: true,
                 removeOnFail: true
             });
         }
 
-        logger.info(`⏱️ [Cron] Dispatched batches for ${users.length} unique users.`);
+        logger.info(`⏱️ [Cron] Dispatched ${uniqueUrls.length} unique URL searches for ${rows.length} total active trackers.`);
     } catch (error) {
         logger.error(error, 'Cron Error');
     }
@@ -57,10 +63,9 @@ async function injectJobs() {
 
 function runInjectJobs() {
     injectJobs();
-
     const randomDelay = Math.floor(Math.random() * 10000) + 20000; // 20-30 seconds
-
     setTimeout(runInjectJobs, randomDelay);
 }
+
 runInjectJobs();
-logger.info('🚀 Cron Injector started. Adding user batches every 30 seconds...');
+logger.info('🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...');

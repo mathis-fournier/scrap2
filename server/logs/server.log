@@ -4,3 +4,281 @@
 [2026-05-21 01:50:23] [INFO] 🚀 Cron Injector started. Adding user batches every 30 seconds...
 [2026-05-21 01:50:23] [INFO] 🚀 API & Websockets running on port 3000
 [2026-05-21 01:50:23] [INFO] 🚀 Worker listening for user batches...
+[2026-05-24 17:43:04] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 17:43:04] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 17:43:04] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 17:43:31] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:43:31] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:43:31] [ERROR] Vinted scan failed for URL https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first: Request failed with status code 407
+AxiosError: Request failed with status code 407
+    at settle (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\adapters\http.js:1029:13)
+    at IncomingMessage.emit (node:events:521:24)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scanVinted (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\services\vintedService.js:17:26)
+    at async Worker.connection [as processFn] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\workers\scraperWorker.js:17:25)
+    at async <anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\bullmq\src\classes\worker.ts:1020:26)
+[2026-05-24 17:43:31] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:44:01] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 17:44:01] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 17:44:02] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:44:02] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 17:44:02] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:44:02] [ERROR] Vinted scan failed for URL https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first: Request failed with status code 407
+AxiosError: Request failed with status code 407
+    at settle (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\adapters\http.js:1029:13)
+    at IncomingMessage.emit (node:events:521:24)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scanVinted (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\services\vintedService.js:17:26)
+    at async Worker.connection [as processFn] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\workers\scraperWorker.js:17:25)
+    at async <anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\bullmq\src\classes\worker.ts:1020:26)
+[2026-05-24 17:44:02] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:44:26] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:44:27] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:44:27] [ERROR] Vinted scan failed for URL https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first: Request failed with status code 407
+AxiosError: Request failed with status code 407
+    at settle (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\adapters\http.js:1029:13)
+    at IncomingMessage.emit (node:events:521:24)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scanVinted (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\services\vintedService.js:17:26)
+    at async Worker.connection [as processFn] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\workers\scraperWorker.js:17:25)
+    at async <anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\bullmq\src\classes\worker.ts:1020:26)
+[2026-05-24 17:44:27] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:44:49] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:44:49] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:44:49] [ERROR] Vinted scan failed for URL https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first: Request failed with status code 407
+AxiosError: Request failed with status code 407
+    at settle (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\adapters\http.js:1029:13)
+    at IncomingMessage.emit (node:events:521:24)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scanVinted (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\services\vintedService.js:17:26)
+    at async Worker.connection [as processFn] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\workers\scraperWorker.js:17:25)
+    at async <anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\bullmq\src\classes\worker.ts:1020:26)
+[2026-05-24 17:44:49] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:46:06] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 17:46:06] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 17:46:06] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 17:46:06] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:46:06] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:46:06] [ERROR] Vinted scan failed for URL https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first: Request failed with status code 407
+AxiosError: Request failed with status code 407
+    at settle (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\adapters\http.js:1029:13)
+    at IncomingMessage.emit (node:events:521:24)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\axios\lib\core\Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async scanVinted (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\services\vintedService.js:17:26)
+    at async Worker.connection [as processFn] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\workers\scraperWorker.js:17:25)
+    at async <anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\bullmq\src\classes\worker.ts:1020:26)
+[2026-05-24 17:46:06] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:46:06] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:46:30] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 17:46:30] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:46:30] [WARN] [Worker] Cookie died for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Stripping access.
+[2026-05-24 17:46:50] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:46:50] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959
+[2026-05-24 17:46:50] [WARN] [Worker] Cookie died for Delegated User a63f854e-c296-4510-8547-cb3029336959. Stripping access.
+[2026-05-24 17:47:42] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:47:42] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:47:43] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Jacke
+[2026-05-24 17:52:24] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 17:52:24] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 17:52:25] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:52:25] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 17:52:25] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:52:26] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:52:26] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:52:50] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:52:50] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:52:50] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:52:50] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:53:41] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:53:41] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:53:41] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:53:41] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:53:58] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 17:53:59] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 17:53:59] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 17:53:59] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:53:59] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:53:59] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:53:59] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:54:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:54:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:54:20] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:54:20] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 17:54:48] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 17:54:48] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440
+[2026-05-24 17:54:48] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 17:54:48] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 18:02:14] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 18:02:14] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 18:02:14] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 18:02:15] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 18:02:15] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-24 18:02:15] [WARN] [Worker] ⚠️ Proxy failed (returned PROXY_BANNED) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-24 18:02:15] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-24 18:04:19] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 18:04:19] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 18:04:19] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 18:07:11] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 18:07:11] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 18:07:11] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 18:08:01] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 18:08:01] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 18:08:02] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Pantalon de survêtement Nike tech gris
+[2026-05-24 18:08:25] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 18:08:25] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 18:08:25] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste polaire sweat pull half zip Columbia helvetia gris S motifs #V272
+[2026-05-24 18:10:23] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 18:10:23] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 18:10:23] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 18:10:23] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 18:10:23] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 18:10:24] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste survêtement fc Barcelone nike
+[2026-05-24 18:10:24] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Veste survêtement fc Barcelone nike
+[2026-05-24 18:10:47] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 18:10:47] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 18:10:48] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike dri-fit legging, roze, maat s, in zeer goede staat.
+[2026-05-24 18:10:48] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Nike dri-fit legging, roze, maat s, in zeer goede staat.
+[2026-05-24 19:20:05] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 19:20:05] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 19:20:05] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 19:20:05] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 19:20:05] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 19:20:06] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike pro leggings
+[2026-05-24 19:20:06] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Nike pro leggings
+[2026-05-24 19:20:25] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 2 total active trackers.
+[2026-05-24 19:20:25] [INFO] [Worker] Scanning 1 URL for 2 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-24 19:20:25] [WARN] [Worker] Cookie died for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Stripping access.
+[2026-05-24 19:25:14] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-24 19:25:14] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-24 19:25:14] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-24 19:25:15] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 19:25:15] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-24 19:25:15] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : 🏃Jogging Nike Air Gris Taille S Made in Cambodia
+[2026-05-24 19:25:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 19:25:41] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-24 19:25:41] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Sac de sport Nike et Puma
+[2026-05-24 19:26:06] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-24 19:26:06] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-24 19:26:07] [WARN] [Worker] Cookie died for Delegated User a63f854e-c296-4510-8547-cb3029336959. Stripping access.
+[2026-05-26 16:40:28] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-26 16:40:28] [ERROR] Cron Error: AggregateError
+AggregateError: 
+    at injectJobs (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\cron\injector.js:13:33)
+    at runInjectJobs (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\cron\injector.js:65:5)
+    at Object.<anonymous> (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\cron\injector.js:70:1)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Object..js (node:internal/modules/cjs/loader:1969:10)
+    at Module.load (node:internal/modules/cjs/loader:1552:32)
+    at Module._load (node:internal/modules/cjs/loader:1354:12)
+    at Object.<anonymous> (C:\Users\akhid\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:32:23)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Object..js (node:internal/modules/cjs/loader:1969:10)
+[2026-05-26 16:40:28] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-26 16:40:28] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-26 16:40:37] [ERROR] getKeywords failed: AggregateError
+AggregateError: 
+    at getKeywords (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\keywordController.js:35:33)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:37] [ERROR] getKeywords failed: AggregateError
+AggregateError: 
+    at getKeywords (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\keywordController.js:35:33)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:37] [ERROR] getUserItems failed: AggregateError
+AggregateError: 
+    at getUserItems (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\itemController.js:10:33)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:37] [ERROR] getUserItems failed: AggregateError
+AggregateError: 
+    at getUserItems (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\itemController.js:10:33)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:37] [ERROR] getUserSettings failed: AggregateError
+AggregateError: 
+    at getUserSettings (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\settingsController.js:8:34)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:37] [ERROR] getUserSettings failed: AggregateError
+AggregateError: 
+    at getUserSettings (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\controllers\settingsController.js:8:34)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:14:9
+    at C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:261:12
+    at getSecret (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\jsonwebtoken\verify.js:101:10)
+    at authenticateToken (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\middleware\auth.js:11:9)
+    at Layer.handleRequest (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\node_modules\router\lib\route.js:157:13)
+[2026-05-26 16:40:49] [ERROR] Cron Error: AggregateError
+AggregateError: 
+    at injectJobs (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\cron\injector.js:13:33)
+    at Timeout.runInjectJobs [as _onTimeout] (C:\Users\akhid\Downloads\scrap-main\scrap-main\server\src\cron\injector.js:65:5)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)
+[2026-05-26 16:41:09] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-26 16:41:09] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-26 16:41:09] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-26 16:42:01] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-26 16:42:01] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-26 16:42:01] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Bundle Nike + GAP Streetwear Premium  Felpa Nike M + Polo Nike M + Oversize Fit
+[2026-05-26 16:42:27] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-26 16:42:27] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-26 16:42:27] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Nike Jogginghose Damen Schwarz

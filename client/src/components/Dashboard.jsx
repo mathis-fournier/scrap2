@@ -1,21 +1,7 @@
 import { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import {
-    ShoppingBag,
-    Package,
-    Tag,
-    Globe,
-    Settings,
-    Zap,
-    Menu,
-    X,
-    Plus,
-    Key,
-    LogOut,
-    Trash2,
-    ShieldCheck,
-    Users,
-    Activity
+    ShoppingBag, Package, Tag, Globe, Settings, Zap, Menu, X, Plus, Key, LogOut, Trash2, ShieldCheck, Users, Activity
 } from 'lucide-react';
 import { ItemCard } from './ItemCards';
 import { API_URL, getAuthHeaders } from '../services/api';
@@ -30,6 +16,7 @@ export default function Dashboard({ userId, role, onLogout }) {
     const [cookieDead, setCookieDead] = useState(false);
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
+    const [useProxy, setUseProxy] = useState(true); // Added Network Preference State
 
     const [adminStats, setAdminStats] = useState({ users: 0, keywords: 0, items: 0 });
     const [adminUsers, setAdminUsers] = useState([]);
@@ -64,6 +51,17 @@ export default function Dashboard({ userId, role, onLogout }) {
                     headers: getAuthHeaders()
                 });
                 setItems(await itemsRes.json());
+
+                const settingsRes = await fetch(`${API_URL}/api/settings`, {
+                    headers: getAuthHeaders()
+                });
+                if (settingsRes.ok) {
+                    const settingsData = await settingsRes.json();
+                    setUseProxy(settingsData.useProxy);
+
+                    // NEW: If they don't have a cookie (it's null because it died, or they are new), trigger the dead state
+                    setCookieDead(!settingsData.hasCookie);
+                }
             } catch (err) {
                 console.error('Failed to fetch initial data', err);
             }
@@ -89,19 +87,33 @@ export default function Dashboard({ userId, role, onLogout }) {
         }
     };
 
-    const handleSaveCookie = async (e) => {
+    // Modified to send both cookie and useProxy settings
+    const handleSaveSettings = async (e) => {
         e.preventDefault();
-        await fetch(`${API_URL}/api/settings`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                ...getAuthHeaders()
-            },
-            body: JSON.stringify({ userId, cookie: cookieInput })
-        });
-        setCookieInput('');
-        setCookieDead(false);
-        alert('Cookie saved securely!');
+        try {
+            const res = await fetch(`${API_URL}/api/settings`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    ...getAuthHeaders()
+                },
+                body: JSON.stringify({ userId, cookie: cookieInput, useProxy })
+            });
+
+            const data = await res.json();
+
+            // NEW: Actually check if the server responded successfully
+            if (res.ok) {
+                setCookieInput('');
+                setCookieDead(false);
+                alert('Settings saved securely!');
+            } else {
+                alert(`Save Failed: ${data.error}`);
+            }
+        } catch (err) {
+            console.error(err);
+            alert('A network error occurred while saving.');
+        }
     };
 
     const handleAddKeyword = async (e) => {
@@ -213,7 +225,7 @@ export default function Dashboard({ userId, role, onLogout }) {
             <main className="flex-1 p-4 pt-20 overflow-y-auto md:p-8 md:pt-8">
                 {cookieDead && activeTab !== 'AdminPanel' && (
                     <div className="flex items-center justify-between p-4 mb-6 font-medium text-red-400 border border-red-500 bg-red-500/20 rounded-xl">
-                        <span>⚠️ Scanning Halted: Your Vinted session cookie has expired or was banned.</span>
+                        <span>⚠️ Scanning Halted: Your Vinted session cookie is missing or has expired.</span>
                         <button onClick={() => setActiveTab('Settings')} className="px-3 py-1 text-sm text-white bg-red-500 rounded-lg hover:bg-red-600">Update</button>
                     </div>
                 )}
@@ -290,15 +302,30 @@ export default function Dashboard({ userId, role, onLogout }) {
                 ) : activeTab === 'Settings' ? (
                     <div className="max-w-3xl space-y-8">
                         <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/50">
-                            <h2 className="mb-4 text-lg font-semibold text-white">Platform Credentials</h2>
-                            <form onSubmit={handleSaveCookie} className="flex flex-col gap-4 md:flex-row md:items-end">
-                                <div className="flex-1">
-                                    <label className="block mb-2 text-sm font-medium text-neutral-400">Vinted Session Cookie</label>
-                                    <input type="password" value={cookieInput} onChange={(e) => setCookieInput(e.target.value)} placeholder="Paste your cookie..." className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
+                            <h2 className="mb-4 text-lg font-semibold text-white">Platform Credentials & Network Setup</h2>
+                            <form onSubmit={handleSaveSettings} className="flex flex-col gap-6">
+                                <div className="flex flex-col gap-4 md:flex-row md:items-end">
+                                    <div className="flex-1">
+                                        <label className="block mb-2 text-sm font-medium text-neutral-400">Vinted Session Cookie</label>
+                                        <input type="password" value={cookieInput} onChange={(e) => setCookieInput(e.target.value)} placeholder="Paste your cookie..." className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
+                                    </div>
+                                    <button type="submit" className="flex items-center justify-center gap-2 px-6 py-3 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500">
+                                        <Key className="w-5 h-5" /> Save
+                                    </button>
                                 </div>
-                                <button type="submit" className="flex items-center justify-center gap-2 px-6 py-3 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500">
-                                    <Key className="w-5 h-5" /> Save
-                                </button>
+                                <div className="pt-2 border-t border-neutral-800">
+                                    <label className="block mb-3 text-sm font-medium text-neutral-400">Connection Preference</label>
+                                    <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
+                                        <label className="flex items-center gap-3 p-3 transition-colors border rounded-lg cursor-pointer border-neutral-800 hover:border-neutral-600 bg-neutral-950/50">
+                                            <input type="radio" checked={useProxy} onChange={() => setUseProxy(true)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" />
+                                            <span className="text-sm font-medium text-white">Use Proxies (Recommended)</span>
+                                        </label>
+                                        <label className="flex items-center gap-3 p-3 transition-colors border rounded-lg cursor-pointer border-neutral-800 hover:border-neutral-600 bg-neutral-950/50">
+                                            <input type="radio" checked={!useProxy} onChange={() => setUseProxy(false)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" />
+                                            <span className="text-sm font-medium text-white">Use Local Network</span>
+                                        </label>
+                                    </div>
+                                </div>
                             </form>
                         </div>
 
