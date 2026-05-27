@@ -1,4 +1,3 @@
-require('dotenv').config();
 const axios = require('axios');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const logger = require('../logger');
@@ -14,9 +13,13 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
     }
 
     try {
+        // Add a debug log to know exactly when Axios starts the request
+        logger.info(`[VintedService] Starting request for: ${apiUrl}`);
+
         const response = await axios.get(apiUrl, {
             httpsAgent: httpsAgent,
             proxy: false,
+            timeout: 15000, // 🔥 CRITICAL: 15-second timeout to prevent infinite hangs
             headers: {
                 'User-Agent': userAgent || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36',
                 'Cookie': cookie,
@@ -45,19 +48,19 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
         return null;
 
     } catch (error) {
+        // Enhanced Error formatting
         if (error.response) {
-            if (error.response.status === 401) {
-                return { error: 'SESSION_EXPIRED' };
-            }
-            if (error.response.status === 403 || error.response.status === 429) {
-                return { error: 'PROXY_BANNED' };
-            }
+            if (error.response.status === 401) return { error: 'SESSION_EXPIRED' };
+            if (error.response.status === 403 || error.response.status === 429) return { error: 'PROXY_BANNED' };
         }
-        if (error.code === 'ECONNRESET' || error.code === 'ETIMEDOUT') {
+
+        if (error.code === 'ECONNRESET' || error.code === 'ETIMEDOUT' || error.code === 'ECONNABORTED') {
+            logger.warn(`[VintedService] Timeout or Connection Reset for URL: ${apiUrl} (Code: ${error.code})`);
             return { error: 'PROXY_BANNED' };
         }
 
-        logger.error(error, `Vinted scan failed for URL ${apiUrl}`);
+        // Log the full exact message so you know WHY it failed
+        logger.error(error.message || error, `[VintedService] Axios request completely failed for URL ${apiUrl}`);
         return null;
     }
 }

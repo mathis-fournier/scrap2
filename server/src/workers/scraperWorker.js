@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '..', '..', '.env') });
 const { Worker } = require('bullmq');
 const Redis = require('ioredis');
 const db = require('../db');
@@ -89,6 +90,20 @@ const worker = new Worker('vinted-scan-queue', async job => {
 
 worker.on('failed', (job, err) => {
     logger.error(err, `[Worker] Job failed for URL batch`);
+});
+
+worker.on('failed', (job, err) => {
+    logger.error(err, `[Worker] Job completely failed for URL: ${job?.data?.apiUrl || 'Unknown'}`);
+});
+
+// 🔥 Add this: Catches worker-level exceptions (e.g., Redis disconnects, OOM errors)
+worker.on('error', err => {
+    logger.error(err, `[Worker] Critical BullMQ Worker Error!`);
+});
+
+// 🔥 Add this: Confirms when the worker ACTUALLY picks up the job
+worker.on('active', job => {
+    logger.info(`[Worker] Started processing job ${job.id} for URL: ${job.data.apiUrl}`);
 });
 
 logger.info('🚀 Worker listening for deduplicated URL batches...');

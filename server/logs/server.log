@@ -282,3 +282,513 @@ AggregateError:
 [2026-05-26 16:42:27] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
 [2026-05-26 16:42:27] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
 [2026-05-26 16:42:27] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Nike Jogginghose Damen Schwarz
+[2026-05-27 01:44:26] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:26] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:27] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:28] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:28] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:28] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:44:28] [ERROR] [Worker] Critical BullMQ Worker Error!: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:47:20] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 01:47:52] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 01:48:31] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 01:48:31] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:31] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:31] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:32] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:32] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:32] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:46] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:46] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:47] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:47] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:48] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:48] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:49] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:49] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:50] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:51] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:52] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:53] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:53] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:54] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:55] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:56] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:58] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:48:59] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:00] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:01] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:02] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:04] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:05] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:08] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:10] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:11] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:13] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:14] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:14] [ERROR] Redis subscriber error: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:15] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:17] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:18] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:20] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:22] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:24] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:26] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:28] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:30] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:32] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:34] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:36] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:38] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:40] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:42] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:44] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:46] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:48] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:50] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:52] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:54] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:56] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:49:58] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:00] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:02] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:04] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:06] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:08] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:10] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:12] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:14] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:16] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:18] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:50:20] [ERROR] [Cron] Redis Queue Error encountered in Injector: AggregateError
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1193:18)
+    at afterConnectMultiple (node:net:1783:7)
+[2026-05-27 01:52:36] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 01:53:07] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 01:54:02] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 01:54:02] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 01:54:45] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 01:55:10] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 01:55:32] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 01:56:47] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 01:56:47] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 01:56:47] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 01:56:47] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:00:08] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:00:09] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:00:09] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:00:09] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:00:37] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:01:03] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:01:31] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:01:56] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:02:19] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:02:48] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:03:02] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:03:02] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:03:03] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:03:03] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:03:28] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:03:49] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:03:59] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:03:59] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:03:59] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:03:59] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:04:22] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:04:46] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:05:07] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:06:31] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:06:31] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:06:32] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:06:32] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:06:51] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:07:31] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:08:06] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:08:07] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:08:14] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:08:29] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:08:57] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 02:09:18] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 02:09:40] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:09:41] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:10:01] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:10:30] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:10:53] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:11:22] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:11:43] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:12:08] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:12:31] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:12:54] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:13:23] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:13:45] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:13:50] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:13:50] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:13:50] [ERROR] Server error: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:2008:16)
+    at listenInCluster (node:net:2065:12)
+    at Server.listen (node:net:2170:7)
+    at Object.<anonymous> (C:\Users\akhid\Documents\scrap2\server\src\index.js:48:8)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+    at Object..js (node:internal/modules/cjs/loader:1969:10)
+    at Module.load (node:internal/modules/cjs/loader:1552:32)
+    at Module._load (node:internal/modules/cjs/loader:1354:12)
+    at Object.<anonymous> (C:\Users\akhid\AppData\Roaming\npm\node_modules\pm2\lib\ProcessContainerFork.js:32:23)
+    at Module._compile (node:internal/modules/cjs/loader:1829:14)
+[2026-05-27 02:14:02] [ERROR] Redis subscriber error: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (C:\Users\akhid\Documents\scrap2\server\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:631:12)
+    at Socket.emit (node:events:509:20)
+    at TCP.<anonymous> (node:net:350:12)
+[2026-05-27 02:14:02] [ERROR] Unhandled promise rejection: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (C:\Users\akhid\Documents\scrap2\server\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:631:12)
+    at Socket.emit (node:events:509:20)
+    at TCP.<anonymous> (node:net:350:12)
+[2026-05-27 02:14:05] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:14:05] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:14:05] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:14:09] [ERROR] [Worker] Critical BullMQ Worker Error!: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-05-27 02:14:12] [ERROR] [Worker] Critical BullMQ Worker Error!: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-05-27 02:14:17] [ERROR] Redis subscriber error: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (C:\Users\akhid\Documents\scrap2\server\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:631:12)
+    at Socket.emit (node:events:509:20)
+    at TCP.<anonymous> (node:net:350:12)
+[2026-05-27 02:14:17] [ERROR] Unhandled promise rejection: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+MaxRetriesPerRequestError: Reached the max retries per request limit (which is 20). Refer to "maxRetriesPerRequest" option for details.
+    at Socket.<anonymous> (C:\Users\akhid\Documents\scrap2\server\node_modules\ioredis\built\redis\event_handler.js:207:37)
+    at Object.onceWrapper (node:events:631:12)
+    at Socket.emit (node:events:509:20)
+    at TCP.<anonymous> (node:net:350:12)
+[2026-05-27 02:15:05] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 02:15:05] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 02:15:05] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 02:15:05] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 02:15:06] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 02:15:06] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-27 02:15:06] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 02:15:06] [INFO] 🎯 HIT! [adiddas] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : felpa
+[2026-05-27 15:07:10] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 15:07:10] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 15:07:10] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 15:07:10] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 15:07:10] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 15:07:10] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-27 15:07:10] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 15:07:10] [WARN] [Worker] Cookie died for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Stripping access.
+[2026-05-27 15:08:20] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 15:08:20] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 15:08:21] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 15:08:21] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 15:08:21] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 15:08:21] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
+[2026-05-27 15:08:21] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
+[2026-05-27 15:08:22] [INFO] 🎯 HIT! [adiddas] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Adidas Terrex Agravic TT Trail
