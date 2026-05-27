@@ -792,3 +792,655 @@ MaxRetriesPerRequestError: Reached the max retries per request limit (which is 2
 [2026-05-27 15:08:21] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via LOCAL NETWORK
 [2026-05-27 15:08:21] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=adiddas&order=newest_first
 [2026-05-27 15:08:22] [INFO] 🎯 HIT! [adiddas] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Adidas Terrex Agravic TT Trail
+[2026-05-27 16:19:01] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 16:19:01] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 16:19:30] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 16:19:31] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 16:19:31] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 16:20:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:20:00] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:20:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:00] [ERROR] Proxy responded with 407 Proxy Authentication Required: 121 bytes.
+
+Below is the first 100 bytes of the proxy response body:
+Not authenticated or invalid authentication credentials. Make sure to update your proxy address, pro
+[2026-05-27 16:20:00] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-27 16:20:00] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-27 16:20:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:20:20] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:20:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:20] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-27 16:20:20] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-27 16:20:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:20:40] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:20:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:20:40] [ERROR] Proxy responded with 407 Proxy Authentication Required: 121 bytes.
+
+Below is the first 100 bytes of the proxy response body:
+Not authenticated or invalid authentication credentials. Make sure to update your proxy address, pro
+[2026-05-27 16:20:40] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-27 16:20:40] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-27 16:21:48] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 16:21:48] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 16:21:48] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 16:22:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:22:00] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:22:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:00] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User ce93f575-d9c0-4274-8a05-54bfa571a440. Initiating auto-rotation...
+[2026-05-27 16:22:00] [INFO] [Worker] Reassigned User ce93f575-d9c0-4274-8a05-54bfa571a440 to new UNIQUE proxy IP.
+[2026-05-27 16:22:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:22:20] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:22:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:21] [INFO] 🎯 HIT! [under] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Lacy Vintage Bombshell wiggle dress
+[2026-05-27 16:22:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:22:40] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:22:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:22:40] [INFO] 🎯 HIT! [under] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Milchaufschäumer elektrisch ETA Latteo
+[2026-05-27 16:23:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:23:00] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:23:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:23:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-05-27 16:23:00] [INFO] 🎯 HIT! [under] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Magnetbaustein-Set, 32tlg.
+[2026-05-27 16:23:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:23:20] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:23:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:23:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:23:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste coupe vent vintage Full zip Adidas | Homme bleu et grise | Taille S
+[2026-05-27 16:23:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-27 16:23:40] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:23:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:23:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:23:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Trainingshose
+[2026-05-27 16:24:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:24:00] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:24:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sudadera under armour
+[2026-05-27 16:24:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:24:20] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:24:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste à capuche zippé Under Armour bleu  Taille: XL
+[2026-05-27 16:24:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:24:40] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:24:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:24:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Cortavientos Under Armour
+[2026-05-27 16:25:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:25:00] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:25:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste Under Armour UA Storm Turquoise taille S - Neuve avec étiquette
+[2026-05-27 16:25:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:25:20] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:25:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Black Under Armour shirt
+[2026-05-27 16:25:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:25:40] [INFO] [Worker] Started processing job aHR0cHM6Ly93d3cudmludGVkLmZyL2FwaS92Mi9j for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:25:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:25:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour running pants
+[2026-05-27 16:34:54] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 16:34:54] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 16:34:54] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 16:35:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:35:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:35:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:35:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:35:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:35:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:35:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:35:21] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sûrvet foot
+[2026-05-27 16:35:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste under armour bleu en très bonne état authentique
+[2026-05-27 16:35:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:35:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:35:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:35:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:35:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:35:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:35:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:35:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Air Max Command / Air Max Wright
+[2026-05-27 16:35:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Running under armour
+[2026-05-27 16:36:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:36:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Título: Nike Air Zoom Victory - Talla 47 (US 12.5) - NUEVAS
+[2026-05-27 16:36:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Underamour Vest
+[2026-05-27 16:36:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:36:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Jogging Nike Noir
+[2026-05-27 16:36:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt
+[2026-05-27 16:36:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:36:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:36:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:36:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:36:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Canotta Nike uomo taglia S colore grigio
+[2026-05-27 16:36:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T shirt under armour
+[2026-05-27 16:37:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:37:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Parachute Track Pants Vintage Nike Triple Grey Limited Edition Exclusive Tn Shox Y2k
+[2026-05-27 16:37:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Mens under Armour runners size 9
+[2026-05-27 16:37:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:37:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under armour set
+[2026-05-27 16:37:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike x NOCTA Tech Fleece Noir Jaune Taille L
+[2026-05-27 16:37:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:37:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:37:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:37:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:37:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Joggers
+[2026-05-27 16:37:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Leggings nero Under Armour tg S/M donna
+[2026-05-27 16:38:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:38:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Parachute Track Pants Vintage Nike Triple Black Limited Edition Exclusive Tn Shox Y2k
+[2026-05-27 16:38:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Cappellino da uomo
+[2026-05-27 16:38:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:38:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Tennis Nike mont
+[2026-05-27 16:38:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Bas under armour
+[2026-05-27 16:38:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:38:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:38:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:38:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:38:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Felpa uomo Nike Tech fleece blu navy
+[2026-05-27 16:38:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste under armour hybrid
+[2026-05-27 16:39:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:39:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Top deportivo under armour
+[2026-05-27 16:39:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Borsa Nike unisex nera
+[2026-05-27 16:39:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:39:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt Nike - bleu - 100% coton - taille L ( KZT8)
+[2026-05-27 16:39:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Ensemble Under Armour blanc taille L avec details lumineux
+[2026-05-27 16:39:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:39:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:39:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:39:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:39:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Huarache wit/beige/roze ZGAN Valt als 38,5
+[2026-05-27 16:39:41] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Pantaloncini compressivi Under Armour
+[2026-05-27 16:40:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:40:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Air max 90 noire
+[2026-05-27 16:40:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Short Under Armour
+[2026-05-27 16:40:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:40:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt de compression Under Armour
+[2026-05-27 16:40:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Vintage 90s Nike Premier Windbreaker Track Jacket Big Logo
+[2026-05-27 16:40:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:40:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:40:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:40:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:40:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under armour
+[2026-05-27 16:40:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike t shirt FCB
+[2026-05-27 16:41:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:41:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : England 2024 Player Jersey Authentic
+[2026-05-27 16:41:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:41:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Vends tee-shirt Under Armour S
+[2026-05-27 16:41:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Rare vintage Nike acg 90s sport zip hoodie size M
+[2026-05-27 16:41:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:41:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:41:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:41:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:41:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike air max plus tn
+[2026-05-27 16:41:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T shirt Under Armur originale con cartellino
+[2026-05-27 16:42:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:42:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Pantaloncini Under Armour Basket Tecnici Grigi Taglia L Uomo
+[2026-05-27 16:42:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Mind 001 Slide Sail
+[2026-05-27 16:42:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:42:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Ensemble Under Armour blanc taille M avec details lumineux
+[2026-05-27 16:42:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike P-6000 Lila Métal taille 46
+[2026-05-27 16:42:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:42:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:42:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:42:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:42:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Atlético Madrid Trainingsjacke 22/23 - Repel Academy AWF
+[2026-05-27 16:42:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour shorts XL great condition
+[2026-05-27 16:43:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:43:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste Nike Logo Brodé Rouge - M
+[2026-05-27 16:43:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt under armour
+[2026-05-27 16:43:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:43:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Crop top "Under Armour"
+[2026-05-27 16:43:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Lote Cristiano Ronaldo Dynasty 2024-25
+[2026-05-27 16:43:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:43:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:43:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:43:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:43:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Shorts ejercicio Nike
+[2026-05-27 16:43:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Amour compression shirt M
+[2026-05-27 16:44:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:44:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike court lite
+[2026-05-27 16:44:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Ensemble complet Under Armour neuf
+[2026-05-27 16:44:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:44:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : haut compression under armour
+[2026-05-27 16:44:21] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-Shirt
+[2026-05-27 16:44:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:44:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:44:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:44:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:44:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Tee-shirt nike jordan
+[2026-05-27 16:44:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Short Under Armour homme coupe ample taille L noir gris sport basketball
+[2026-05-27 16:45:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:45:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Shorts Under Armour - Talla S
+[2026-05-27 16:45:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Windrunner Sportswear Noir Turquoise
+[2026-05-27 16:45:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:45:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : cappello Nike
+[2026-05-27 16:45:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sudadera talla s
+[2026-05-27 16:45:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:45:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:45:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:45:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:45:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Lot t-shirt 12 ans
+[2026-05-27 16:45:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Air Zoom Vapor V (2008) Vintage Tennis Deadstock US11 / EU45
+[2026-05-27 16:46:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:46:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:01] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sparta Praha Trikot Matchworn
+[2026-05-27 16:46:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Brassière Under Armour taille S
+[2026-05-27 16:46:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:46:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Liverpool trainingsbroek
+[2026-05-27 16:46:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt da uomo taglia M
+[2026-05-27 16:46:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:46:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:46:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:46:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:46:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour HeatGear – T-shirt sport PGA Championship 2017-Taille XL
+[2026-05-27 16:46:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Legging 3/4 Nike
+[2026-05-27 16:47:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:47:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Grey under armour t shirt
+[2026-05-27 16:47:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike air force 1 low shadow blue tint white
+[2026-05-27 16:47:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:47:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Ja morant 3
+[2026-05-27 16:47:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste under armour hybride blanche
+[2026-05-27 16:47:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:47:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:47:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:47:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:47:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Scarpe Nike Air Force 1 Low nere
+[2026-05-27 16:47:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour Tech Tee T-Shirt | Red | taille L
+[2026-05-27 16:48:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:48:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Shorts de Golf niño talla 14
+[2026-05-27 16:48:01] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike sportlegging dames – maat XS - Zwart
+[2026-05-27 16:48:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:48:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Mens hoody
+[2026-05-27 16:48:21] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Dunk Grises
+[2026-05-27 16:48:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:48:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:48:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:48:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:48:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sportshorts Under Armour
+[2026-05-27 16:48:41] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Short nike tech
+[2026-05-27 16:49:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:49:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Canotta Chicago Bulls
+[2026-05-27 16:49:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sport BH Under Armour
+[2026-05-27 16:49:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:49:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : tshirt compression under armour
+[2026-05-27 16:49:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Tech | grau | M | Hose und Jacke | Anzug
+[2026-05-27 16:49:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:49:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:49:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:49:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:49:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike T-Shirt grau/bunt Sport Gr.98/104
+[2026-05-27 16:49:41] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Short de Sport Under Armour avec Poches - Taille L Homme - Noir avec logo sur côté - SP02
+[2026-05-27 16:50:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:50:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Maglia Jersey Shirt Camiseta voetbalshirt trui tricot Maillot Barcelone Messi
+[2026-05-27 16:50:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:50:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike SB Frottee Polo Shirt Weiß Terry Skater Vintage L
+[2026-05-27 16:50:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour Top gr.L wie neu
+[2026-05-27 16:50:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:50:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:50:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:50:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:50:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sweat à capuche de sport | Under Armour Heatgear | Gris et noir | Taille L
+[2026-05-27 16:50:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Vends Nike p6000
+[2026-05-27 16:51:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:51:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Vintage Schuhe
+[2026-05-27 16:51:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under armour
+[2026-05-27 16:51:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:51:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Lot 2 T-shirt Under Armour Sport Noir et Blanc
+[2026-05-27 16:51:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Atletico Madrid 2024/25 Home - J. Alvarez 19 - S
+[2026-05-27 16:51:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:51:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:51:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:51:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:51:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Veste Under Armour gris taille S/M #20
+[2026-05-27 16:51:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Pull a capuche Nike (Noir) Taille (XXL) Très bon état
+[2026-05-27 16:52:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:52:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:00] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Under Armour M
+[2026-05-27 16:52:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Schuhe
+[2026-05-27 16:52:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:52:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Polo under armour
+[2026-05-27 16:52:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : nike tech x barcellona blue (S)
+[2026-05-27 16:52:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:52:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:52:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:52:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:52:41] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Jogging on running
+[2026-05-27 16:52:41] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike air max 2090 volt sneakers
+[2026-05-27 16:53:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:53:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:01] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Pantaloncini
+[2026-05-27 16:53:01] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Ensemble under armour
+[2026-05-27 16:53:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:53:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : 1/2 under armour hybrid
+[2026-05-27 16:53:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt enfant Nike gris taille M coton manches courtes SKU804
+[2026-05-27 16:53:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:53:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:53:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:53:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:53:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Coupe-Vent Disney Parks Gris/Bleu XL/XXL - Poche Dos
+[2026-05-27 16:54:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:54:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:54:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:54:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:54:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:54:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:54:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:54:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike SB Cap
+[2026-05-27 16:54:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 16:54:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:54:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:54:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:54:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 16:54:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 16:54:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 16:54:20] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Cold gear
+[2026-05-27 16:54:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : asymmetrisches weißes Rippstrick Oberteil mit nur einem Ärmel im One Shoulder Stil
+[2026-05-27 16:54:45] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 16:54:45] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 16:54:45] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 19:28:38] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 19:28:38] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 19:28:38] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 19:28:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 19:28:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:28:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:28:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:28:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:28:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:28:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:28:41] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt under armour rose
+[2026-05-27 19:28:41] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike Total 90 Vintage Y2K Soccer Football Blokecore Hype Drill Jersey T-shirt
+[2026-05-27 19:33:16] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-27 19:33:16] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-27 19:33:16] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-27 19:33:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 19:33:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:33:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:33:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:33:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:33:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:33:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:33:21] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike football boots
+[2026-05-27 19:33:21] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Sportbroekje under amour 10 jaar
+[2026-05-27 19:33:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-27 19:33:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:33:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:33:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:33:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-27 19:33:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-27 19:33:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-27 19:33:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt Under Armour Taille L
+[2026-05-27 19:33:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Baskets Nike

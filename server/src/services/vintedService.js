@@ -1,5 +1,4 @@
-const axios = require('axios');
-const { HttpsProxyAgent } = require('https-proxy-agent');
+// server/src/services/vintedService.js
 const logger = require('../logger');
 
 async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
@@ -7,19 +6,17 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
         return null;
     }
 
-    let httpsAgent = null;
-    if (proxyUrl) {
-        httpsAgent = new HttpsProxyAgent(proxyUrl);
-    }
-
     try {
-        // Add a debug log to know exactly when Axios starts the request
+        // Dynamically import got-scraping (ESM) into your CommonJS environment
+        const { gotScraping } = await import('got-scraping');
+
         logger.info(`[VintedService] Starting request for: ${apiUrl}`);
 
-        const response = await axios.get(apiUrl, {
-            httpsAgent: httpsAgent,
-            proxy: false,
-            timeout: 15000, // 🔥 CRITICAL: 15-second timeout to prevent infinite hangs
+        const response = await gotScraping({
+            url: apiUrl,
+            responseType: 'json',
+            timeout: { request: 15000 }, // 🔥 CRITICAL: 15-second timeout
+            proxyUrl: proxyUrl || undefined, // Native proxy handling
             headers: {
                 'User-Agent': userAgent || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36',
                 'Cookie': cookie,
@@ -27,7 +24,7 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
             }
         });
 
-        const items = response.data.items;
+        const items = response.body.items;
 
         if (items && items.length > 0) {
             const realItems = items.filter(item => !item.is_promoted && !item.promoted);
@@ -48,19 +45,21 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
         return null;
 
     } catch (error) {
-        // Enhanced Error formatting
+        // Enhanced Error formatting specifically for got-scraping responses
         if (error.response) {
-            if (error.response.status === 401) return { error: 'SESSION_EXPIRED' };
-            if (error.response.status === 403 || error.response.status === 429) return { error: 'PROXY_BANNED' };
+            const status = error.response.statusCode;
+            if (status === 401) return { error: 'SESSION_EXPIRED' };
+            if (status === 403 || status === 429) return { error: 'PROXY_BANNED' };
         }
 
-        if (error.code === 'ECONNRESET' || error.code === 'ETIMEDOUT' || error.code === 'ECONNABORTED') {
+        // got-scraping network error codes
+        if (['ECONNRESET', 'ETIMEDOUT', 'ECONNABORTED', 'ERR_NON_2XX_3XX_RESPONSE'].includes(error.code)) {
             logger.warn(`[VintedService] Timeout or Connection Reset for URL: ${apiUrl} (Code: ${error.code})`);
             return { error: 'PROXY_BANNED' };
         }
 
-        // Log the full exact message so you know WHY it failed
-        logger.error(error.message || error, `[VintedService] Axios request completely failed for URL ${apiUrl}`);
+        // Log the full exact message
+        logger.error(error.message || error, `[VintedService] got-scraping request completely failed for URL ${apiUrl}`);
         return null;
     }
 }

@@ -52,8 +52,8 @@ const worker = new Worker('vinted-scan-queue', async job => {
         }
 
         if (annonce && !annonce.error) {
-            // Fan-out: Save and notify EVERY subscriber tracking this exact URL
-            for (const sub of subscribers) {
+            // Fan-out: Execute all DB inserts and Redis publishes concurrently
+            const notificationPromises = subscribers.map(async (sub) => {
                 const [result] = await db.execute(
                     `INSERT IGNORE INTO items 
                     (id, user_id, keyword_id, title, price, url, image_url, brand, size) 
@@ -61,6 +61,7 @@ const worker = new Worker('vinted-scan-queue', async job => {
                     [annonce.id, sub.userId, sub.keywordId, annonce.titre, annonce.prix, annonce.lien, annonce.image, annonce.brand, annonce.size]
                 );
 
+                // Only publish to the socket if this specific user hasn't seen it yet
                 if (result.affectedRows > 0) {
                     logger.info(`🎯 HIT! [${sub.keywordName}] for User ${sub.userId} : ${annonce.titre}`);
                     redisPub.publish('vinted-drops', JSON.stringify({
@@ -77,7 +78,8 @@ const worker = new Worker('vinted-scan-queue', async job => {
                         }
                     }));
                 }
-            }
+            });
+            await Promise.all(notificationPromises);
         }
     } catch (error) {
         logger.error(error, `[Worker] Error scanning URL`);
