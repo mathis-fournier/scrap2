@@ -7,16 +7,18 @@ const useStore = create((set, get) => ({
     items: [],
     watchlist: [],
     cookieDead: false,
+    userTier: 'free', // NEW: Default to free
     socket: null,
 
     // Actions
     setItems: (items) => set({ items }),
     setWatchlist: (watchlist) => set({ watchlist }),
     setCookieDead: (status) => set({ cookieDead: status }),
+    setUserTier: (tier) => set({ userTier: tier }),
 
     // Network Actions
     initializeSocket: (userId) => {
-        if (get().socket) return; // Prevent multiple connections
+        if (get().socket) return;
 
         const socket = io(API_URL, { query: { userId } });
 
@@ -48,14 +50,17 @@ const useStore = create((set, get) => ({
             const itemsRes = await fetch(`${API_URL}/api/items/${userId}`, { headers: getAuthHeaders() });
             const settingsRes = await fetch(`${API_URL}/api/settings`, { headers: getAuthHeaders() });
 
-            const watchlist = await kwRes.json();
-            const items = await itemsRes.json();
-
-            set({ watchlist, items });
+            set({
+                watchlist: await kwRes.json(),
+                items: await itemsRes.json()
+            });
 
             if (settingsRes.ok) {
                 const settingsData = await settingsRes.json();
-                set({ cookieDead: !settingsData.hasCookie });
+                set({
+                    cookieDead: !settingsData.hasCookie,
+                    userTier: settingsData.tier || 'free' // Capture the tier from your settings/auth endpoint
+                });
             }
         } catch (err) {
             console.error('Failed to fetch initial data', err);

@@ -9,6 +9,7 @@ const settingsRoutes = require('./routes/settingsRoutes');
 const keywordsRoutes = require('./routes/keywordsRoutes');
 const itemsRoutes = require('./routes/itemsRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const usersRoutes = require('./routes/usersRoutes');
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.use('/api', authRoutes);
 app.use('/api', settingsRoutes);
 app.use('/api', keywordsRoutes);
 app.use('/api', itemsRoutes);
+app.use('/api/users', usersRoutes);
 app.use('/api', adminRoutes);
 
 app.use((err, req, res, next) => {

@@ -1444,3 +1444,63 @@ Not authenticated or invalid authentication credentials. Make sure to update you
 [2026-05-27 19:33:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
 [2026-05-27 19:33:40] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt Under Armour Taille L
 [2026-05-27 19:33:40] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Baskets Nike
+[2026-05-28 01:56:32] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 01:56:32] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 01:56:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-28 01:56:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:56:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:56:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:56:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:56:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:56:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:56:41] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Brassière de sport Nike
+[2026-05-28 01:56:41] [INFO] 🎯 HIT! [under armour] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Maglia donna under armour
+[2026-05-28 01:57:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-28 01:57:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:57:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:57:00] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt Nike NFL Hall Of Fame Game 2012 noir 2XL
+[2026-05-28 01:57:16] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 01:57:16] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 01:57:16] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 01:57:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-28 01:57:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:57:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:57:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-05-28 01:57:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:57:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:57:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:57:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-05-28 01:58:52] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 01:58:52] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 01:58:52] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 01:59:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 01:59:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:59:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 01:59:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 01:59:01] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : T-shirt Nike Super Bowl San Francisco noir L
+[2026-05-28 02:01:50] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 02:01:50] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 02:01:50] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 02:02:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:02:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:02:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 02:02:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:02:01] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike pacific Damen Sneaker
+[2026-05-28 02:04:16] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 02:04:16] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 02:04:16] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 02:04:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:04:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:04:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
+[2026-05-28 02:04:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:04:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike mind 001 talla 45

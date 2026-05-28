@@ -4,12 +4,14 @@ const logger = require('../logger');
 async function getUserSettings(req, res) {
     const userId = req.user.userId;
     try {
-        // Fetch vinted_cookie to check if it was wiped by the worker
-        const [users] = await db.execute('SELECT use_proxy, vinted_cookie FROM users WHERE id = ?', [userId]);
+        // Fetch vinted_cookie, use_proxy, and tier
+        const [users] = await db.execute('SELECT use_proxy, vinted_cookie, tier FROM users WHERE id = ?', [userId]);
+
         if (users.length > 0) {
             res.json({
                 useProxy: Boolean(users[0].use_proxy),
-                hasCookie: !!users[0].vinted_cookie // Returns true if it exists, false if it is NULL or empty
+                hasCookie: !!users[0].vinted_cookie, // Returns true if it exists, false if it is NULL or empty
+                tier: users[0].tier || 'free' // <-- Added tier to the frontend response
             });
         } else {
             res.status(404).json({ error: 'User not found' });
