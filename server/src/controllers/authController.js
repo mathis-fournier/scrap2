@@ -4,7 +4,8 @@ const jwt = require('jsonwebtoken');
 const db = require('../db');
 const logger = require('../logger');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super-secret-cda-key-12345';
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) throw new Error("FATAL: JWT_SECRET is not defined");
 
 async function registerUser(req, res) {
     const { email, password } = req.body;

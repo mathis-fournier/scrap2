@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super-secret-cda-key-12345';
+const JWT_SECRET = process.env.JWT_SECRET;
+if (!JWT_SECRET) throw new Error("FATAL: JWT_SECRET is not defined");
 
 const authenticateToken = (req, res, next) => {
     const authHeader = req.headers['authorization'];

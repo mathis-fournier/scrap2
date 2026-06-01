@@ -50,9 +50,32 @@ const useStore = create((set, get) => ({
             const itemsRes = await fetch(`${API_URL}/api/items/${userId}`, { headers: getAuthHeaders() });
             const settingsRes = await fetch(`${API_URL}/api/settings`, { headers: getAuthHeaders() });
 
+            // 1. Intercept 401/403 errors and purge the dead token
+            if (kwRes.status === 401 || kwRes.status === 403 ||
+                itemsRes.status === 401 || itemsRes.status === 403 ||
+                settingsRes.status === 401 || settingsRes.status === 403) {
+
+                console.warn('Authentication failed or token expired. Clearing session.');
+
+                // 1. Wipe EVERYTHING (token, userId, role)
+                localStorage.clear();
+
+                // 2. Clear the store data just in case
+                set({ items: [], watchlist: [] });
+
+                // 3. Force the app to reload. 
+                // When it reloads, Panel.jsx will read a null userId and show the AuthScreen.
+                window.location.reload();
+                return;
+            }
+
+            const watchlistData = await kwRes.json();
+            const itemsData = await itemsRes.json();
+
+            // 2. Fallback protection: Guarantee we only save arrays into the state
             set({
-                watchlist: await kwRes.json(),
-                items: await itemsRes.json()
+                watchlist: Array.isArray(watchlistData) ? watchlistData : [],
+                items: Array.isArray(itemsData) ? itemsData : []
             });
 
             if (settingsRes.ok) {
@@ -64,6 +87,8 @@ const useStore = create((set, get) => ({
             }
         } catch (err) {
             console.error('Failed to fetch initial data', err);
+            // Make sure state doesn't end up undefined on hard network failures
+            set({ items: [], watchlist: [] });
         }
     }
 }));

@@ -1504,3 +1504,92 @@ Not authenticated or invalid authentication credentials. Make sure to update you
 [2026-05-28 02:04:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User ce93f575-d9c0-4274-8a05-54bfa571a440 via PROXY
 [2026-05-28 02:04:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
 [2026-05-28 02:04:20] [INFO] 🎯 HIT! [nike] for User ce93f575-d9c0-4274-8a05-54bfa571a440 : Nike mind 001 talla 45
+[2026-05-28 02:15:16] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 02:15:16] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 02:15:16] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 02:24:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:24:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via PROXY
+[2026-05-28 02:24:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:00] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959. Initiating auto-rotation...
+[2026-05-28 02:24:00] [INFO] [Worker] Reassigned User a63f854e-c296-4510-8547-cb3029336959 to new UNIQUE proxy IP.
+[2026-05-28 02:24:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:24:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via PROXY
+[2026-05-28 02:24:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:20] [WARN] [Worker] ⚠️ Proxy failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959. Initiating auto-rotation...
+[2026-05-28 02:24:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:24:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-28 02:24:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:24:40] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-05-28 02:25:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:25:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:25:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-28 02:25:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:25:00] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-05-28 02:25:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:25:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:25:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-28 02:25:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-05-28 02:25:20] [INFO] 🎯 HIT! [nike] for User a63f854e-c296-4510-8547-cb3029336959 : Black Nike AirMax Shorts
+[2026-05-28 02:35:15] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-05-28 02:35:15] [INFO] 🚀 API & Websockets running on port 3000
+[2026-05-28 02:35:15] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-05-28 02:35:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-05-28 02:35:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-05-28 02:35:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-05-28 02:35:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-05-28 02:35:40] [INFO] 🎯 HIT! [test] for User a63f854e-c296-4510-8547-cb3029336959 : CD de musique Yannick Noah Pokhara
+[2026-06-01 15:25:24] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-01 15:25:24] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-01 15:25:24] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-01 15:26:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 15:26:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-06-01 15:26:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:00] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-06-01 15:26:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 15:26:20] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:20] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-06-01 15:26:20] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:20] [INFO] 🎯 HIT! [under armour] for User a63f854e-c296-4510-8547-cb3029336959 : Under armour boys tshirt
+[2026-06-01 15:26:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 15:26:40] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:40] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-06-01 15:26:40] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:26:40] [INFO] 🎯 HIT! [under armour] for User a63f854e-c296-4510-8547-cb3029336959 : Under Armour T-Shirt
+[2026-06-01 15:27:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 15:27:00] [INFO] [Worker] Started processing job 3f54bca7ed5d0639f8bc5a5a4541a74d for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:27:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-06-01 15:27:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under%20armour&order=newest_first
+[2026-06-01 15:27:00] [INFO] 🎯 HIT! [under armour] for User a63f854e-c296-4510-8547-cb3029336959 : Short de sport Under Armour | Taille M | Bleu Logo imprimé
+[2026-06-01 17:13:49] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-01 17:13:49] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-01 17:13:49] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-01 17:14:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 17:14:00] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:14:00] [INFO] [Worker] Scanning 1 URL for 1 subscribers - Delegated to User a63f854e-c296-4510-8547-cb3029336959 via LOCAL NETWORK
+[2026-06-01 17:14:00] [INFO] [VintedService] Starting request for: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:14:00] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-06-01 17:16:34] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-01 17:16:34] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-01 17:16:35] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-01 17:16:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 17:16:40] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:16:40] [WARN] [VintedService] Unexpected JSON structure (No items array). Body: {"code":100,"message":"jeton d'authentification invalide","message_code":"invalid_authentication_token"}
+[2026-06-01 17:16:40] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-06-01 17:17:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 17:17:00] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:17:00] [WARN] [VintedService] Unexpected JSON structure (No items array). Body: {"code":100,"message":"jeton d'authentification invalide","message_code":"invalid_authentication_token"}
+[2026-06-01 17:17:00] [WARN] [Worker] ⚠️ Request failed (returned null) for Delegated User a63f854e-c296-4510-8547-cb3029336959 on LOCAL NETWORK. No rotation possible.
+[2026-06-01 17:18:38] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-01 17:18:38] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-01 17:18:38] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-01 17:19:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 17:19:00] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:19:00] [WARN] [VintedService] Soft session expiration detected in JSON body.
+[2026-06-01 17:19:00] [WARN] [Worker] Cookie died for Delegated User a63f854e-c296-4510-8547-cb3029336959. Stripping access.
+[2026-06-01 17:20:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-01 17:20:20] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-01 17:20:20] [INFO] 🎯 HIT! [under] for User a63f854e-c296-4510-8547-cb3029336959 : Camiseta Under Armour - Talla S
