@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom'; // 1. Import useNavigate
 import { API_URL } from '../services/api';
 
-export default function AuthScreen({ onAuthSuccess }) {
+// 2. Remove onAuthSuccess from props
+export default function AuthScreen() {
     const [isLogin, setIsLogin] = useState(true);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [tosAccepted, setTosAccepted] = useState(false);
+
+    const navigate = useNavigate(); // 3. Initialize the hook
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,10 +33,14 @@ export default function AuthScreen({ onAuthSuccess }) {
 
             if (!res.ok) throw new Error(data.error);
 
+            // Store credentials
             localStorage.setItem('token', data.token);
             localStorage.setItem('userId', data.userId);
             localStorage.setItem('role', data.role || 'user');
-            onAuthSuccess(data.userId, data.role || 'user');
+
+            // 4. Redirect to the app panel instead of calling the missing function
+            navigate('/app');
+
         } catch (err) {
             setError(err.message);
         }
