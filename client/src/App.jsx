@@ -7,6 +7,7 @@ import Panel from './components/Panel';
 import LandingPage from './components/LandingPage';
 // Assuming you have an AuthScreen based on your file structure
 import AuthScreen from './components/AuthScreen';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -28,7 +29,14 @@ function App() {
         <Route path="/login" element={<AuthScreen />} />
 
         {/* The Main Application */}
-        <Route path="/app" element={<Panel />} />
+        <Route
+          path="/app"
+          element={
+            <ProtectedRoute>
+              <Panel />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

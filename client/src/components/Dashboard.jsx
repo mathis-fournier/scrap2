@@ -7,6 +7,7 @@ import { ItemCard } from './ItemCards';
 import TrackerSettings from './TrackerSettings';
 import useStore from '../store/useStore';
 import { API_URL, getAuthHeaders } from '../services/api';
+import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard({ userId, role, onLogout }) {
     const [activeTab, setActiveTab] = useState('Vinted');
@@ -76,6 +77,15 @@ export default function Dashboard({ userId, role, onLogout }) {
 
     const filteredItems = items.filter(item => item.platform === activeTab);
 
+    // Inside your component:
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem('token');
+        localStorage.removeItem('userId');
+        localStorage.removeItem('role');
+        navigate('/login');
+    };
     return (
         <div className="flex w-full h-screen overflow-hidden font-sans bg-neutral-950 text-neutral-200">
             {/* Mobile Nav Header */}
@@ -128,7 +138,7 @@ export default function Dashboard({ userId, role, onLogout }) {
 
                 <div className="p-4 border-t border-neutral-800/60">
                     <button onClick={onLogout} className="flex items-center justify-center w-full gap-2 px-4 py-3 text-sm font-medium text-red-400 transition-colors rounded-xl bg-red-500/10 hover:bg-red-500/20">
-                        <LogOut className="w-4 h-4" /> Sign Out
+                        Sign Out
                     </button>
                 </div>
             </aside>
