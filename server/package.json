@@ -23,6 +23,9 @@
     "jsonwebtoken": "^9.0.3",
     "mysql2": "^3.22.3",
     "node-cron": "^4.2.1",
+    "puppeteer": "^25.1.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "socket.io": "^4.8.3"
   },
   "devDependencies": {

@@ -62,4 +62,48 @@ async function createKeyword(req, res) {
     }
 }
 
+async function getKeywords(req, res) {
+    const { targetUserId } = req.params;
+    const requesterId = req.user.userId;
+
+    if (requesterId !== targetUserId && req.user.role !== 'admin') {
+        return res.status(403).json({ error: 'Unauthorized access to keywords.' });
+    }
+
+    try {
+        const [rows] = await db.execute(
+            'SELECT id, name, min_price, max_price, api_url FROM keywords WHERE user_id = ?',
+            [targetUserId]
+        );
+
+        res.json(rows);
+    } catch (err) {
+        logger.error(err, 'getKeywords failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
+async function removeKeyword(req, res) {
+    const { keywordId } = req.params;
+    const requesterId = req.user.userId;
+
+    try {
+        const [rows] = await db.execute('SELECT user_id FROM keywords WHERE id = ?', [keywordId]);
+        if (rows.length === 0) {
+            return res.status(404).json({ error: 'Keyword not found.' });
+        }
+
+        const keywordOwnerId = rows[0].user_id;
+        if (requesterId !== keywordOwnerId && req.user.role !== 'admin') {
+            return res.status(403).json({ error: 'Unauthorized to delete this keyword.' });
+        }
+
+        await db.execute('DELETE FROM keywords WHERE id = ?', [keywordId]);
+        res.json({ success: true });
+    } catch (err) {
+        logger.error(err, 'removeKeyword failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
 module.exports = { createKeyword, getKeywords, removeKeyword };

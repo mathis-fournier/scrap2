@@ -58,4 +58,65 @@ async function saveUserSettings(req, res) {
     }
 }
 
-module.exports = { saveUserSettings, getUserSettings };
+async function generateCookie(req, res) {
+    const userId = req.user.userId;
+
+    try {
+        const { gotScraping } = await import('got-scraping');
+
+        const requestOptions = {
+            headers: {
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                'Accept-Language': 'fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7',
+                'Cache-Control': 'no-cache',
+                'Pragma': 'no-cache'
+            },
+            retry: { limit: 0 },
+            throwHttpErrors: false
+        };
+
+        if (process.env.PROXY_URL || process.env.PROXY_HOST) {
+            const proxyUrl = process.env.PROXY_URL || `http://${process.env.PROXY_USER}:${process.env.PROXY_PASS}@${process.env.PROXY_HOST}:${process.env.PROXY_PORT}`;
+            requestOptions.proxyUrl = proxyUrl;
+        }
+
+        const response = await gotScraping.get('https://www.vinted.fr', requestOptions);
+
+        const setCookieHeaders = response.headers['set-cookie'];
+
+        if (!setCookieHeaders || setCookieHeaders.length === 0) {
+            return res.status(400).json({
+                error: 'No cookies returned by Vinted.',
+                statusCode: response.statusCode
+            });
+        }
+
+        // Extract the "key=value" part of EVERY cookie Vinted sent us
+        const cookieFragments = setCookieHeaders.map(headerStr => headerStr.split(';')[0]);
+
+        // Filter out empty ones (like when they send "datadome=")
+        const validCookies = cookieFragments.filter(c => c.includes('=') && !c.endsWith('='));
+
+        if (validCookies.length === 0) {
+            return res.status(400).json({ error: 'Failed to extract valid cookies.' });
+        }
+
+        // Combine them all into one massive valid Cookie string
+        const newCookie = validCookies.join('; ');
+
+        // Update the database
+        await db.execute('UPDATE users SET vinted_cookie = ? WHERE id = ?', [newCookie, userId]);
+
+        res.json({
+            success: true,
+            message: 'Cookie generated and saved successfully.',
+            cookie: newCookie
+        });
+
+    } catch (error) {
+        logger.error(error, 'Error generating Vinted cookie');
+        res.status(500).json({ error: 'Internal server error while generating cookie.' });
+    }
+}
+
+module.exports = { saveUserSettings, getUserSettings, generateCookie };

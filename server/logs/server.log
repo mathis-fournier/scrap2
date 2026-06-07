@@ -5766,3 +5766,97 @@ AggregateError:
 [2026-06-03 23:33:10] [INFO] 🚀 Worker listening for deduplicated URL batches...
 [2026-06-03 23:33:11] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
 [2026-06-03 23:33:11] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-06 22:07:51] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:09:59] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:10:13] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:10:55] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-06 22:10:55] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:11:57] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-06 22:11:57] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-06 22:11:57] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:12:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-06 22:12:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-06 22:12:41] [WARN] [VintedService] Soft session expiration detected in JSON body.
+[2026-06-06 22:12:41] [WARN] [Worker] Cookie died for Delegated User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4. Stripping access.
+[2026-06-06 22:13:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-06 22:13:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-06 22:13:20] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pack 5 Crankbaits + boite + triplés
+[2026-06-06 22:30:15] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:30:15] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-06 22:31:28] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:31:28] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-06 22:31:43] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:31:43] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-06 22:32:02] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-06 22:32:02] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-06 22:32:02] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 14:50:43] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 14:50:43] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 14:50:43] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 14:51:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-07 14:51:00] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 14:51:01] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Console 3DS + housse et chargeur
+[2026-06-07 14:51:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-07 14:51:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 14:51:20] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Testeur de disjoncteurs différentiels de 10 à 35 mA, et controle présence de terre. Neuf.
+[2026-06-07 16:32:12] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:32:12] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:32:12] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:33:01] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:33:01] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:33:01] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:34:53] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:34:53] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:34:53] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:35:59] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:35:59] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:36:00] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:38:30] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:38:30] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:38:30] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:39:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-07 16:39:00] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:39:01] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Montre Dogma suisse
+[2026-06-07 16:39:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-07 16:39:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:39:20] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Micro Guitar Hero Wii
+[2026-06-07 16:39:32] [ERROR] createKeyword failed: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+Error: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+    at createKeyword (C:\Users\akhid\Documents\scrap2\server\src\controllers\keywordController.js:45:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-07 16:39:34] [ERROR] createKeyword failed: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+Error: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+    at createKeyword (C:\Users\akhid\Documents\scrap2\server\src\controllers\keywordController.js:45:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-07 16:39:35] [ERROR] createKeyword failed: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+Error: Duplicata du champ 'test-e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4' pour la clef 'keywords.unique_user_keyword'
+    at createKeyword (C:\Users\akhid\Documents\scrap2\server\src\controllers\keywordController.js:45:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-07 16:39:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-07 16:39:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:39:40] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Testeur de débit de gaz
+[2026-06-07 16:40:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-06-07 16:40:00] [INFO] [Worker] Started processing job fbf300144a6245f4503aeaec216d52f2 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=aa&order=newest_first
+[2026-06-07 16:40:00] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:40:00] [INFO] 🎯 HIT! [aa] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Soutien gorge
+[2026-06-07 16:40:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-06-07 16:40:20] [INFO] [Worker] Started processing job fbf300144a6245f4503aeaec216d52f2 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=aa&order=newest_first
+[2026-06-07 16:40:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:40:20] [INFO] 🎯 HIT! [aa] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : 2 soutiens Primark novos copa A
+[2026-06-07 16:40:40] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-06-07 16:40:40] [INFO] [Worker] Started processing job fbf300144a6245f4503aeaec216d52f2 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=aa&order=newest_first
+[2026-06-07 16:40:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:40:40] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Harnais Y-power Julius
+[2026-06-07 16:41:00] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-06-07 16:41:00] [INFO] [Worker] Started processing job fbf300144a6245f4503aeaec216d52f2 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=aa&order=newest_first
+[2026-06-07 16:41:00] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:41:00] [INFO] 🎯 HIT! [aa] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Chargeur de Piles et Batterie Externe 2-en-1 GP Charge AnyWay (+ 2 Piles AA 2600mAh)
+[2026-06-07 16:41:00] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : 🎮 Convertisseur vidéo AV vers HDMI – UpScaler 1080P (Mini AV2HDTV)
+[2026-06-07 16:42:13] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-07 16:42:13] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-07 16:42:13] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-07 16:42:20] [INFO] ⏱️ [Cron] Dispatched 2 unique URL searches for 2 total active trackers.
+[2026-06-07 16:42:20] [INFO] [Worker] Started processing job fbf300144a6245f4503aeaec216d52f2 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=aa&order=newest_first
+[2026-06-07 16:42:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-07 16:42:21] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jeu Nintendo switch - Pokémon perle scintillante
+[2026-06-07 16:42:21] [INFO] 🎯 HIT! [aa] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Hanimex 35 HF

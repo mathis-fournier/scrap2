@@ -11,7 +11,7 @@ export default function TrackerSettings({ userId }) {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [useProxy, setUseProxy] = useState(true);
-
+    const [isGenerating, setIsGenerating] = useState(false);
     // Global state
     const { watchlist, setWatchlist, setCookieDead } = useStore();
 
@@ -93,6 +93,33 @@ export default function TrackerSettings({ userId }) {
         }
     };
 
+    const handleGenerateCookie = async () => {
+        setIsGenerating(true);
+        try {
+            const token = localStorage.getItem('token');
+            const response = await fetch(`${API_URL}/api/settings/generate-cookie`, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                toast.success('Cookie successfully generated and saved!');
+                // If you have a local state variable holding the visible cookie string, update it here:
+                // setCookieString(data.cookie); 
+            } else {
+                toast.error(data.error || 'Failed to generate cookie');
+            }
+        } catch (error) {
+            toast.error('Network error while generating cookie');
+        } finally {
+            setIsGenerating(false);
+        }
+    };
+
     return (
         <div className="max-w-3xl space-y-8">
             <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/50">
@@ -103,6 +130,13 @@ export default function TrackerSettings({ userId }) {
                             <label className="block mb-2 text-sm font-medium text-neutral-400">Vinted Session Cookie</label>
                             <input type="password" value={cookieInput} onChange={(e) => setCookieInput(e.target.value)} placeholder="Paste your cookie..." className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
                         </div>
+                        <button
+                            onClick={handleGenerateCookie}
+                            disabled={isGenerating}
+                            className="px-4 py-2 mt-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 disabled:opacity-50"
+                        >
+                            {isGenerating ? 'Generating...' : 'Auto-Generate Cookie'}
+                        </button>
                         <button type="submit" className="flex items-center justify-center gap-2 px-6 py-3 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500">
                             <Key className="w-5 h-5" /> Save
                         </button>

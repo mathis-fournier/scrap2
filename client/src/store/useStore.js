@@ -73,8 +73,14 @@ const useStore = create((set, get) => ({
             const itemsData = await itemsRes.json();
 
             // 2. Fallback protection: Guarantee we only save arrays into the state
+            const watchlist = Array.isArray(watchlistData)
+                ? watchlistData
+                : Array.isArray(watchlistData?.keywords)
+                    ? watchlistData.keywords
+                    : [];
+
             set({
-                watchlist: Array.isArray(watchlistData) ? watchlistData : [],
+                watchlist,
                 items: Array.isArray(itemsData) ? itemsData : []
             });
 
