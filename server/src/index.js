@@ -7,9 +7,35 @@ const app = require('./app');
 const logger = require('./logger');
 
 const server = http.createServer(app);
+const FRONTEND_URL = process.env.FRONTEND_URL ? process.env.FRONTEND_URL.replace(/\/$/, '') : null;
+const allowedOrigins = [
+    FRONTEND_URL,
+    'http://localhost:5173',
+    'http://127.0.0.1:5173'
+].filter(Boolean);
+
+function isPrivateLanOrigin(origin) {
+    try {
+        const url = new URL(origin);
+        return url.port === '5173' && ['http:', 'https:'].includes(url.protocol) &&
+            (/^10\./.test(url.hostname) ||
+                /^127\./.test(url.hostname) ||
+                /^192\.168\./.test(url.hostname) ||
+                /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(url.hostname));
+    } catch (err) {
+        return false;
+    }
+}
+
 const io = new Server(server, {
     cors: {
-        origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+        origin: (origin, callback) => {
+            if (!origin) return callback(null, true);
+            if (allowedOrigins.includes(origin) || isPrivateLanOrigin(origin)) {
+                return callback(null, true);
+            }
+            callback(new Error('Not allowed by CORS'));
+        },
         methods: ["GET", "POST"]
     }
 });

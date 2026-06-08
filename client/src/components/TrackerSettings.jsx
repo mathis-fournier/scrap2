@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Key, Plus, Trash2, Tag } from 'lucide-react';
 import { toast } from 'sonner';
 import useStore from '../store/useStore';
@@ -8,40 +8,84 @@ export default function TrackerSettings({ userId }) {
     // Local state for forms
     const [newSearchName, setNewSearchName] = useState('');
     const [cookieInput, setCookieInput] = useState('');
+    const [cookiePreview, setCookiePreview] = useState('');
+    const [cookieTouched, setCookieTouched] = useState(false);
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
     const [useProxy, setUseProxy] = useState(true);
     const [isGenerating, setIsGenerating] = useState(false);
+    const [isSavingProxy, setIsSavingProxy] = useState(false);
+    const isInitialProxyLoad = useRef(true);
     // Global state
     const { watchlist, setWatchlist, setCookieDead } = useStore();
 
     useEffect(() => {
-        // Fetch specific settings on mount if needed, or rely on global fetchInitialData
+        if (!userId) return;
+
+        // Fetch specific settings on mount or when userId becomes available.
         const fetchSettings = async () => {
-            const settingsRes = await fetch(`${API_URL}/api/settings`, { headers: getAuthHeaders() });
-            if (settingsRes.ok) {
-                const data = await settingsRes.json();
-                setUseProxy(data.useProxy);
+            try {
+                const settingsRes = await fetch(`${API_URL}/api/settings`, { headers: getAuthHeaders() });
+                if (settingsRes.ok) {
+                    const data = await settingsRes.json();
+                    setUseProxy(data.useProxy);
+                    setCookiePreview(data.cookiePreview || '');
+                    setCookieTouched(false);
+                }
+            } finally {
+                isInitialProxyLoad.current = false;
             }
         };
         fetchSettings();
-    }, []);
+    }, [userId]);
+
+    const saveUseProxy = async (value) => {
+        setUseProxy(value);
+        if (isInitialProxyLoad.current) return;
+
+        setIsSavingProxy(true);
+        const toastId = toast.loading('Saving connection preference...');
+
+        try {
+            const res = await fetch(`${API_URL}/api/settings`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
+                body: JSON.stringify({ userId, useProxy: value })
+            });
+
+            if (res.ok) {
+                toast.success('Connection preference saved.', { id: toastId });
+            } else {
+                const data = await res.json();
+                toast.error(`Failed to save preference: ${data.error}`, { id: toastId });
+            }
+        } catch (err) {
+            toast.error('Network error while saving preference.', { id: toastId });
+        } finally {
+            setIsSavingProxy(false);
+        }
+    };
 
     const handleSaveSettings = async (e) => {
         e.preventDefault();
 
         // UX: Show a loading state toast
         const toastId = toast.loading('Securing credentials...');
+        const cookieValue = cookieTouched ? cookieInput : undefined;
 
         try {
             const res = await fetch(`${API_URL}/api/settings`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json', ...getAuthHeaders() },
-                body: JSON.stringify({ userId, cookie: cookieInput, useProxy })
+                body: JSON.stringify({ userId, cookie: cookieValue, useProxy })
             });
 
             if (res.ok) {
+                if (cookieTouched && cookieInput) {
+                    setCookiePreview(cookieInput.slice(0, 30));
+                }
                 setCookieInput('');
+                setCookieTouched(false);
                 setCookieDead(false);
                 toast.success('Settings saved securely!', { id: toastId });
             } else {
@@ -108,8 +152,11 @@ export default function TrackerSettings({ userId }) {
 
             if (response.ok) {
                 toast.success('Cookie successfully generated and saved!');
-                // If you have a local state variable holding the visible cookie string, update it here:
-                // setCookieString(data.cookie); 
+                if (data.cookie) {
+                    setCookiePreview(data.cookie.slice(0, 30));
+                    setCookieInput('');
+                    setCookieTouched(false);
+                }
             } else {
                 toast.error(data.error || 'Failed to generate cookie');
             }
@@ -128,12 +175,21 @@ export default function TrackerSettings({ userId }) {
                     <div className="flex flex-col gap-4 md:flex-row md:items-end">
                         <div className="flex-1">
                             <label className="block mb-2 text-sm font-medium text-neutral-400">Vinted Session Cookie</label>
-                            <input type="password" value={cookieInput} onChange={(e) => setCookieInput(e.target.value)} placeholder="Paste your cookie..." className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
+                            <input
+                                type="text"
+                                value={cookieTouched ? cookieInput : (cookieInput || cookiePreview)}
+                                onChange={(e) => {
+                                    setCookieInput(e.target.value);
+                                    setCookieTouched(true);
+                                }}
+                                placeholder={cookiePreview ? '' : 'Paste your cookie...'}
+                                className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none"
+                            />
                         </div>
                         <button
                             onClick={handleGenerateCookie}
                             disabled={isGenerating}
-                            className="px-4 py-2 mt-2 font-medium text-white transition-colors bg-blue-600 rounded-md hover:bg-blue-700 disabled:opacity-50"
+                            className="flex items-center justify-center gap-2 px-6 py-3 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500"
                         >
                             {isGenerating ? 'Generating...' : 'Auto-Generate Cookie'}
                         </button>
@@ -145,11 +201,11 @@ export default function TrackerSettings({ userId }) {
                         <label className="block mb-3 text-sm font-medium text-neutral-400">Connection Preference</label>
                         <div className="flex flex-col gap-3 sm:flex-row sm:gap-6">
                             <label className="flex items-center gap-3 p-3 transition-colors border rounded-lg cursor-pointer border-neutral-800 hover:border-neutral-600 bg-neutral-950/50">
-                                <input type="radio" checked={useProxy} onChange={() => setUseProxy(true)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" />
+                                <input type="radio" checked={useProxy} onChange={() => saveUseProxy(true)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" disabled={isSavingProxy} />
                                 <span className="text-sm font-medium text-white">Use Proxies (Recommended)</span>
                             </label>
                             <label className="flex items-center gap-3 p-3 transition-colors border rounded-lg cursor-pointer border-neutral-800 hover:border-neutral-600 bg-neutral-950/50">
-                                <input type="radio" checked={!useProxy} onChange={() => setUseProxy(false)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" />
+                                <input type="radio" checked={!useProxy} onChange={() => saveUseProxy(false)} className="w-4 h-4 text-teal-600 bg-neutral-900 border-neutral-700" disabled={isSavingProxy} />
                                 <span className="text-sm font-medium text-white">Use Local Network</span>
                             </label>
                         </div>

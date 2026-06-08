@@ -8,10 +8,15 @@ async function getUserSettings(req, res) {
         const [users] = await db.execute('SELECT use_proxy, vinted_cookie, tier FROM users WHERE id = ?', [userId]);
 
         if (users.length > 0) {
+            const cookiePreview = users[0].vinted_cookie
+                ? users[0].vinted_cookie.slice(0, 30)
+                : null;
+
             res.json({
                 useProxy: Boolean(users[0].use_proxy),
-                hasCookie: !!users[0].vinted_cookie, // Returns true if it exists, false if it is NULL or empty
-                tier: users[0].tier || 'free' // <-- Added tier to the frontend response
+                hasCookie: !!users[0].vinted_cookie,
+                cookiePreview,
+                tier: users[0].tier || 'free'
             });
         } else {
             res.status(404).json({ error: 'User not found' });
@@ -27,8 +32,14 @@ async function saveUserSettings(req, res) {
     const { cookie, useProxy } = req.body;
 
     try {
-        const [users] = await db.execute('SELECT proxy_url FROM users WHERE id = ?', [userId]);
+        const [users] = await db.execute('SELECT proxy_url, vinted_cookie FROM users WHERE id = ?', [userId]);
+        if (users.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+
+        const currentCookie = users[0]?.vinted_cookie ?? null;
         let proxyToSave = users[0]?.proxy_url;
+        const cookieToSave = cookie !== undefined ? cookie : currentCookie;
 
         if (!proxyToSave && process.env.PROXY_POOL) {
             const pool = process.env.PROXY_POOL.split(',');
@@ -48,7 +59,7 @@ async function saveUserSettings(req, res) {
 
         await db.execute(
             'UPDATE users SET vinted_cookie = ?, proxy_url = ?, use_proxy = ? WHERE id = ?',
-            [cookie, proxyToSave, useProxyValue, userId]
+            [cookieToSave, proxyToSave, useProxyValue, userId]
         );
 
         res.json({ success: true, message: 'Settings saved successfully!' });

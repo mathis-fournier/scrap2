@@ -1,4 +1,6 @@
-export const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+const defaultHost = window?.location?.hostname || 'localhost';
+const inferredApiUrl = `${window?.location?.protocol}//${defaultHost}:3000`;
+export const API_URL = import.meta.env.VITE_API_URL || inferredApiUrl;
 
 export const getAuthHeaders = () => ({
     Authorization: `Bearer ${localStorage.getItem('token')}`
