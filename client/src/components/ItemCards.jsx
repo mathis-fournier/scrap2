@@ -3,6 +3,43 @@ import { toast } from 'sonner';
 import useStore from '../store/useStore';
 import { API_URL, getAuthHeaders } from '../services/api';
 
+// Helper to format time relative to now
+function formatTimeAgo(item) {
+    // Check if item already has pre-formatted time from API
+    if (item.time) return item.time;
+
+    // Try multiple timestamp field names
+    const timestamp = item.createdAt || item.created_at || item.timestamp || item.created_at_iso;
+
+    if (!timestamp) return 'just now';
+
+    try {
+        const now = new Date();
+        const itemTime = new Date(timestamp);
+
+        // Invalid date check
+        if (isNaN(itemTime.getTime())) return 'just now';
+
+        const diffMs = now - itemTime;
+        const diffSec = Math.floor(diffMs / 1000);
+        const diffMin = Math.floor(diffSec / 60);
+        const diffHour = Math.floor(diffMin / 60);
+        const diffDay = Math.floor(diffHour / 24);
+
+        if (diffSec < 60) return 'just now';
+        if (diffMin === 1) return '1 minute ago';
+        if (diffMin < 60) return `${diffMin} minutes ago`;
+        if (diffHour === 1) return '1 hour ago';
+        if (diffHour < 24) return `${diffHour} hours ago`;
+        if (diffDay === 1) return '1 day ago';
+        if (diffDay < 7) return `${diffDay} days ago`;
+
+        return itemTime.toLocaleDateString();
+    } catch (e) {
+        return 'just now';
+    }
+}
+
 export function ItemCard({ item }) {
     // Pull the tier directly from global state
     const userTier = useStore((state) => state.userTier);
@@ -71,35 +108,52 @@ export function ItemCard({ item }) {
     };
 
     return (
-        <div className="flex flex-col overflow-hidden transition-all border rounded-2xl border-neutral-800 bg-neutral-900/50 hover:border-neutral-700">
-            <div className="relative h-48 overflow-hidden bg-neutral-800">
-                <img
-                    // FIX: Accept both camelCase (live socket) and snake_case (database refresh)
-                    src={item.imageUrl || item.image_url || 'https://via.placeholder.com/300?text=No+Image'}
-                    alt={item.title}
-                    className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
-                    loading="lazy"
-                />
-                <div className="absolute top-3 right-3 flex items-center gap-1 rounded-lg bg-black/70 px-2.5 py-1 backdrop-blur-md">
-                    <span className="font-bold text-green-400">{item.price}€</span>
-                </div>
-            </div>
+        <div className="relative flex flex-col overflow-hidden transition-all border rounded-2xl border-neutral-800 hover:border-neutral-700 group h-80">
+            {/* Background Image */}
+            <img
+                src={item.imageUrl || item.image_url || 'https://via.placeholder.com/300?text=No+Image'}
+                alt={item.title}
+                className="absolute inset-0 object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+            />
 
-            <div className="flex flex-col flex-1 p-4">
-                <div className="flex items-start justify-between gap-2 mb-2">
-                    <h3 className="font-medium leading-tight text-white line-clamp-2">{item.title}</h3>
-                </div>
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
-                <div className="flex items-center gap-2 mb-4 text-xs text-neutral-400">
-                    <span className="px-2 py-1 rounded-md bg-neutral-800">{item.brand}</span>
-                    <span className="px-2 py-1 rounded-md bg-neutral-800">Size {item.size}</span>
+            {/* Content Container */}
+            <div className="absolute inset-0 flex flex-col justify-between p-4">
+                {/* Top Section: Time */}
+                <div className="flex items-start">
+                    <span className="text-xs font-medium text-neutral-300 bg-black/50 backdrop-blur px-2.5 py-1 rounded-lg">
+                        {formatTimeAgo(item)}
+                    </span>
                 </div>
 
-                <div className="mt-auto">
-                    {/* Intercept the click here using a button instead of an 'a' tag */}
+                {/* Bottom Section: Tags and Button */}
+                <div className="flex flex-col gap-3">
+                    {/* Price */}
+                    <span className="text-lg font-bold text-white-400 73B017 text-shadow-lg/40 ">
+                        {item.price}€
+                    </span>
+
+                    {/* Tags */}
+                    <div className="flex flex-wrap gap-2">
+                        {item.brand && (
+                            <span className="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white">
+                                {item.brand}
+                            </span>
+                        )}
+                        {item.size && (
+                            <span className="px-2.5 py-1 text-xs font-medium rounded-lg bg-white/10 backdrop-blur border border-white/20 text-white">
+                                Size {item.size}
+                            </span>
+                        )}
+                    </div>
+
+                    {/* Button */}
                     <button
                         onClick={handleLinkClick}
-                        className="flex items-center justify-center w-full gap-2 py-2.5 text-sm font-medium text-black transition-colors bg-white rounded-xl hover:bg-neutral-200"
+                        className="flex items-center justify-center w-full gap-2 py-2.5 text-sm font-medium text-black transition-all bg-white rounded-xl hover:bg-neutral-100"
                     >
                         <ExternalLink className="w-4 h-4" /> View on {item.platform}
                     </button>

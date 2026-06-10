@@ -40,22 +40,24 @@ async function saveUserSettings(req, res) {
         const currentCookie = users[0]?.vinted_cookie ?? null;
         let proxyToSave = users[0]?.proxy_url;
         const cookieToSave = cookie !== undefined ? cookie : currentCookie;
-
-        if (!proxyToSave && process.env.PROXY_POOL) {
-            const pool = process.env.PROXY_POOL.split(',');
-            const [usedProxiesRows] = await db.execute('SELECT proxy_url FROM users WHERE proxy_url IS NOT NULL');
-            const usedProxies = usedProxiesRows.map(row => row.proxy_url);
-            const availableProxies = pool.filter(proxy => !usedProxies.includes(proxy));
-
-            if (availableProxies.length > 0) {
-                proxyToSave = availableProxies[Math.floor(Math.random() * availableProxies.length)];
-            } else {
-                return res.status(400).json({ error: 'System at capacity! No dedicated proxies available right now.' });
-            }
-        }
-
-        // Force convert the boolean from frontend to 1 or 0 for MySQL
         const useProxyValue = useProxy ? 1 : 0;
+
+        if (useProxyValue) {
+            if (!proxyToSave && process.env.PROXY_POOL) {
+                const pool = process.env.PROXY_POOL.split(',');
+                const [usedProxiesRows] = await db.execute('SELECT proxy_url FROM users WHERE proxy_url IS NOT NULL');
+                const usedProxies = usedProxiesRows.map(row => row.proxy_url);
+                const availableProxies = pool.filter(proxy => !usedProxies.includes(proxy));
+
+                if (availableProxies.length > 0) {
+                    proxyToSave = availableProxies[Math.floor(Math.random() * availableProxies.length)];
+                } else {
+                    return res.status(400).json({ error: 'System at capacity! No dedicated proxies available right now.' });
+                }
+            }
+        } else {
+            proxyToSave = null;
+        }
 
         await db.execute(
             'UPDATE users SET vinted_cookie = ?, proxy_url = ?, use_proxy = ? WHERE id = ?',

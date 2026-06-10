@@ -8,6 +8,7 @@ import LandingPage from './components/LandingPage';
 // Assuming you have an AuthScreen based on your file structure
 import AuthScreen from './components/AuthScreen';
 import ProtectedRoute from './components/ProtectedRoute';
+import AuthSuccess from './components/AuthSuccess';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
 
         {/* Authentication Route */}
         <Route path="/login" element={<AuthScreen />} />
+
+        <Route path="/auth-success" element={<AuthSuccess />} />
 
         {/* The Main Application */}
         <Route

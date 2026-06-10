@@ -1,21 +1,23 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
-    ShoppingBag, Package, Tag, Globe, Settings, Zap, Menu, X, LogOut, Trash2, ShieldCheck, Users, Activity
+    ShoppingBag, Package, Tag, Globe, Settings, Zap, Menu, X, Trash2, ShieldCheck, Users, Activity
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { ItemCard } from './ItemCards';
 import TrackerSettings from './TrackerSettings';
 import useStore from '../store/useStore';
 import { API_URL, getAuthHeaders } from '../services/api';
-import { useNavigate } from 'react-router-dom';
 
 export default function Dashboard({ userId, role, onLogout }) {
+    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('Vinted');
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     // Local state reserved purely for Admin Panel
     const [adminStats, setAdminStats] = useState({ users: 0, keywords: 0, items: 0 });
     const [adminUsers, setAdminUsers] = useState([]);
+    const [nextScanInSeconds, setNextScanInSeconds] = useState(0);
 
     // Global State hooks via Zustand
     const { items, cookieDead, initializeSocket, disconnectSocket, fetchInitialData } = useStore();
@@ -54,6 +56,20 @@ export default function Dashboard({ userId, role, onLogout }) {
         }
     }, [activeTab, userId, role]);
 
+    useEffect(() => {
+        const SCAN_INTERVAL_SECONDS = 20;
+
+        const updateTimer = () => {
+            const now = Math.floor(Date.now() / 1000);
+            const secondsUntilNext = SCAN_INTERVAL_SECONDS - (now % SCAN_INTERVAL_SECONDS);
+            setNextScanInSeconds(secondsUntilNext === 0 ? SCAN_INTERVAL_SECONDS : secondsUntilNext);
+        };
+
+        updateTimer();
+        const interval = setInterval(updateTimer, 1000);
+        return () => clearInterval(interval);
+    }, []);
+
     const deleteUser = async (targetId) => {
         if (!window.confirm('Are you sure? This deletes the user and all their history permanently.')) return;
 
@@ -75,24 +91,24 @@ export default function Dashboard({ userId, role, onLogout }) {
         }
     };
 
-    const filteredItems = items.filter(item => item.platform === activeTab);
-
-    // Inside your component:
-    const navigate = useNavigate();
-
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('userId');
         localStorage.removeItem('role');
+        // Call the parent onLogout prop if provided, otherwise just navigate
+        if (onLogout) onLogout();
         navigate('/login');
     };
+
+    const filteredItems = items.filter(item => item.platform === activeTab);
+
     return (
-        <div className="flex w-full h-screen overflow-hidden font-sans bg-neutral-950 text-neutral-200">
+        <div className="flex w-full h-screen overflow-hidden font-sans text-neutral-200 bg-neutral-950">
             {/* Mobile Nav Header */}
             <div className="fixed top-0 z-50 flex items-center justify-between w-full px-4 py-3 border-b md:hidden border-neutral-800 bg-neutral-900">
                 <div className="flex items-center gap-2">
                     <Zap className="w-5 h-5 text-teal-500" />
-                    <span className="font-bold text-white">FinderPro</span>
+                    <span className="font-bold text-white">gratte.sh</span>
                 </div>
                 <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-neutral-400">
                     {isSidebarOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -103,10 +119,10 @@ export default function Dashboard({ userId, role, onLogout }) {
             <aside className={`fixed inset-y-0 left-0 z-40 flex h-full w-64 flex-col border-r border-neutral-800 bg-neutral-900/95 backdrop-blur-xl transition-transform duration-300 md:static md:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="items-center justify-between hidden h-16 px-6 border-b md:flex border-neutral-800/60 md:h-20">
                     <div className="flex items-center gap-3">
-                        <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-linear-to-br from-teal-400 to-teal-600 shadow-[0_0_15px_rgba(20,184,166,0.3)] md:h-10 md:w-10">
+                        <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 shadow-[0_0_15px_rgba(20,184,166,0.3)] md:h-10 md:w-10">
                             <Zap className="w-4 h-4 text-white fill-white" />
                         </div>
-                        <span className="text-lg font-bold tracking-wide text-white md:text-xl">Finder<span className="text-teal-500">Pro</span></span>
+                        <span className="text-lg font-bold tracking-wide text-white md:text-xl">gratte<span className="text-teal-500">.sh</span></span>
                     </div>
                 </div>
 
@@ -128,7 +144,7 @@ export default function Dashboard({ userId, role, onLogout }) {
                     </li>
 
                     {role === 'admin' && (
-                        <li className="list-none mt-2">
+                        <li className="mt-2 list-none">
                             <button onClick={() => { setActiveTab('AdminPanel'); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-300 ${activeTab === 'AdminPanel' ? 'bg-indigo-500/10 text-indigo-400' : 'text-neutral-400 hover:bg-neutral-800/60 hover:text-neutral-200'}`}>
                                 <ShieldCheck className="w-5 h-5 text-indigo-500" /> Admin Panel
                             </button>
@@ -137,7 +153,7 @@ export default function Dashboard({ userId, role, onLogout }) {
                 </nav>
 
                 <div className="p-4 border-t border-neutral-800/60">
-                    <button onClick={onLogout} className="flex items-center justify-center w-full gap-2 px-4 py-3 text-sm font-medium text-red-400 transition-colors rounded-xl bg-red-500/10 hover:bg-red-500/20">
+                    <button onClick={handleLogout} className="flex items-center justify-center w-full gap-2 px-4 py-3 text-sm font-medium text-red-400 transition-colors rounded-xl bg-red-500/10 hover:bg-red-500/20">
                         Sign Out
                     </button>
                 </div>
@@ -154,11 +170,17 @@ export default function Dashboard({ userId, role, onLogout }) {
                     </div>
                 )}
 
-                <header className="flex items-end justify-between mb-6 md:mb-8">
+                <header className="flex flex-col justify-between mb-6 md:mb-8 sm:flex-row sm:items-end">
                     <div>
                         <h1 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
                             {activeTab === 'Settings' ? 'Scraper Settings' : activeTab === 'AdminPanel' ? 'System Overview' : `${activeTab} Monitor`}
                         </h1>
+                    </div>
+                    <div className="mt-3 sm:mt-0">
+                        <span className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-full text-neutral-300 bg-neutral-900/80 border border-neutral-800">
+                            <span className="text-neutral-500">Next scan in</span>
+                            <span className="font-semibold text-white">{Math.floor(nextScanInSeconds / 60)}:{String(nextScanInSeconds % 60).padStart(2, '0')}</span>
+                        </span>
                     </div>
                 </header>
 

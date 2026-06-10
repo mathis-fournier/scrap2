@@ -5927,3 +5927,321 @@ TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify 
 [2026-06-08 00:36:26] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
 [2026-06-08 00:36:26] [INFO] 🚀 API & Websockets running on port 3000
 [2026-06-08 00:36:26] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-08 01:05:53] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-08 01:05:53] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-08 01:05:53] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-08 01:06:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:06:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:06:20] [INFO] 🎯 HIT! [test] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Lot 5x16go ddr4 2133mhz ram ECC Samsung et micron
+[2026-06-08 01:08:21] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-08 01:08:21] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-08 01:08:21] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-08 01:09:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:09:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:09:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:09:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:10:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:10:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-08 01:10:00] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike air max 2x
+[2026-06-08 01:10:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:10:20] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-08 01:10:20] [INFO] 🎯 HIT! [under] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : tres bon etait
+[2026-06-08 01:12:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:12:20] [INFO] [Worker] Started processing job 67ff0a9fb72253d709e4ffa556b4889f for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=und&order=newest_first
+[2026-06-08 01:12:20] [INFO] 🎯 HIT! [und] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Regenjacke mikk-line Gr. 86/92
+[2026-06-08 01:12:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:12:40] [INFO] [Worker] Started processing job 67ff0a9fb72253d709e4ffa556b4889f for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=und&order=newest_first
+[2026-06-08 01:12:40] [INFO] 🎯 HIT! [und] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Wiking H0 1:87 Mercedes-Benz Actros "EASY Express Air Systems" Koffer-Sattelzug
+[2026-06-08 01:13:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:13:00] [INFO] [Worker] Started processing job 67ff0a9fb72253d709e4ffa556b4889f for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=und&order=newest_first
+[2026-06-08 01:13:00] [INFO] 🎯 HIT! [und] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Karmesin und Purpur Display 36 sealed NEU ohne Risse
+[2026-06-08 01:15:32] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-08 01:15:32] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-08 01:15:32] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-08 01:16:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:16:00] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:16:00] [INFO] 🎯 HIT! [test] for User 396657c0-abe2-48c6-93b1-2778d5e9c6d0 : Dragon Ball Z Goku Densetsu Nintendo DS Complet PAL FR Notice
+[2026-06-08 01:17:28] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-08 01:17:28] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-08 01:17:29] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-08 01:17:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:17:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:18:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:18:00] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-08 01:18:00] [INFO] 🎯 HIT! [under] for User 396657c0-abe2-48c6-93b1-2778d5e9c6d0 : 💚 Rüschenbody – Gr. 68 (M-9)
+[2026-06-08 01:18:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:18:20] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-08 01:18:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-08 01:18:40] [INFO] [Worker] Started processing job 30b817e245126ca8a2b47b13b74e83d3 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=test&order=newest_first
+[2026-06-09 00:36:40] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-09 00:36:40] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-09 00:36:40] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-09 00:37:54] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-09 00:37:54] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-09 00:37:54] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-09 01:11:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:11:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-09 01:11:20] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike sports bra
+[2026-06-09 01:12:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:12:40] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-09 01:12:40] [INFO] 🎯 HIT! [under] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : s.Oliver Shorts – Schwarz – Größe 46
+[2026-06-09 01:13:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:13:00] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-09 01:13:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:13:20] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-09 01:13:20] [INFO] 🎯 HIT! [under] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Urban Outfitters T-Shirt Grau Vintage Wash | Print Shirt
+[2026-06-09 01:38:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:38:40] [INFO] [Worker] Started processing job 5c3d4d26f51bbd678a6fb3c1477189d5 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=cesare%20paciotti&order=newest_first
+[2026-06-09 01:38:40] [INFO] 🎯 HIT! [cesare paciotti] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Polo Cesare Paciotti 4US
+[2026-06-09 01:39:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-09 01:39:00] [INFO] [Worker] Started processing job 5c3d4d26f51bbd678a6fb3c1477189d5 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=cesare%20paciotti&order=newest_first
+[2026-06-10 08:42:42] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 08:42:42] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 08:42:42] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 08:43:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:43:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 08:43:01] [WARN] [VintedService] Soft session expiration detected in JSON body.
+[2026-06-10 08:43:01] [WARN] [Worker] Cookie died for Delegated User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4. Stripping access.
+[2026-06-10 08:43:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:43:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 08:43:21] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike dri fit running t shirt
+[2026-06-10 08:43:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:43:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 08:43:40] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Air schoenen maat 43
+[2026-06-10 08:44:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:44:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 08:44:00] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike airforce
+[2026-06-10 08:50:33] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 08:50:34] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 08:50:34] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 08:50:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:50:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 08:50:41] [INFO] 🎯 HIT! [nike] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sneakers
+[2026-06-10 08:51:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 08:51:20] [INFO] [Worker] Started processing job 055ca9569242324d9951cea40d37f52b for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=under&order=newest_first
+[2026-06-10 08:51:20] [INFO] 🎯 HIT! [under] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Under Armour Shirt
+[2026-06-10 09:12:51] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 09:12:51] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 09:12:51] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 09:14:47] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 09:14:48] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 09:14:48] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 09:14:58] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 09:14:59] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 09:14:59] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 09:16:45] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 09:16:45] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 09:16:45] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-06-10 12:36:07] [ERROR] Redis subscriber error: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-06-10 12:36:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: read ECONNRESET
+Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-06-10 12:36:07] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:07] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 12:36:08] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:51] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:51] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:51] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:52] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:53] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:54] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:55] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:56] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:56] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:56] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:56] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:56] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:57] [ERROR] Redis subscriber error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:57] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:57] [ERROR] [Worker] Critical BullMQ Worker Error!: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:54:57] [ERROR] [Cron] Redis Queue Error encountered in Injector: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:121:26)
+[2026-06-10 14:55:16] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 14:55:16] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 14:55:16] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 14:56:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 14:56:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 14:56:00] [INFO] 🎯 HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Air Force 1
+[2026-06-10 14:56:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 14:56:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-10 14:56:20] [INFO] 🎯 HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Zipper Damen

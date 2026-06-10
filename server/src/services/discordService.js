@@ -4,39 +4,65 @@ async function sendTeaserWebhook(item) {
     const webhookUrl = process.env.DISCORD_TEASER_WEBHOOK_URL;
     if (!webhookUrl) return;
 
-    // Generate a fake blurred link or just link to your landing page
-    const upgradeUrl = 'https://yourwebsite.com/upgrade';
+    // Direct link to your high-converting waitlist/landing page
+    const upgradeUrl = process.env.WAITLIST_URL || 'https://gratte.sh';
+
+    // Parse platform or fallback
+    const platformName = item.platform ? item.platform.toUpperCase() : 'MARKETPLACE';
+    
+    // FOMO Tactic: Obfuscate the exact item details slightly so they have to unlock it
+    const cleanTitle = item.title || 'Item';
+    const teasedTitle = cleanTitle.length > 20 
+        ? `${cleanTitle.substring(0, 18)}... [🔒 LOCKED]` 
+        : `${cleanTitle} [🔒 LOCKED]`;
 
     const payload = {
-        username: 'FinderPro Sniper',
-        avatar_url: 'https://cdn-icons-png.flaticon.com/512/732/732221.png',
+        username: 'gratte.sh | Omni-Scanner',
+        avatar_url: 'https://i.imgur.com/your-logo.png', // Replace with your actual asset later
         embeds: [
             {
-                title: '🚨 Massive Steal Detected!',
-                description: `A **${item.title}** just dropped way below market value.`,
-                color: 16711680, // Red color for urgency
+                title: `⚡ Steal Found on ${platformName}`,
+                description: `A highly underpriced **${teasedTitle}** was just extracted. Premium members were alerted instantly.`,
+                // Emerald Green accent color (Decimal for #10B981) to match your landing page
+                color: 1096065, 
                 fields: [
                     {
-                        name: '💵 Price',
-                        value: `**${item.price}€**`,
+                        name: '💰 Price',
+                        value: `**${item.price} €**`,
                         inline: true
                     },
                     {
+                        name: '📈 Profit Est.',
+                        value: '` High Margin `',
+                        inline: true
+                    },
+                    {
+                        name: '\u200B',
+                        value: '\u200B',
+                        inline: false
+                    },
+                    {
                         name: '🏷️ Brand',
-                        value: item.brand || 'N/A',
+                        value: `\`${item.brand || 'Hidden'}\``,
                         inline: true
                     },
                     {
                         name: '📏 Size',
-                        value: item.size || 'N/A',
+                        value: `\`${item.size || 'Hidden'}\``,
+                        inline: true
+                    },
+                    {
+                        name: '🌐 Source',
+                        value: `\`${platformName}\``,
                         inline: true
                     }
                 ],
                 thumbnail: {
-                    url: item.imageUrl
+                    // Keeps the blurred/unblurred product thumbnail clean on the right side
+                    url: item.imageUrl 
                 },
                 footer: {
-                    text: '🔒 Link hidden. Premium members are checking out right now.'
+                    text: `🔒 Direct buying link & auto-checkout hidden • Latency: ${item.latency || '142'}ms`
                 },
                 timestamp: new Date().toISOString()
             }
@@ -47,8 +73,8 @@ async function sendTeaserWebhook(item) {
                 components: [
                     {
                         type: 2,
-                        style: 5, // Link button
-                        label: 'Upgrade to Unlock Link ⚡',
+                        style: 5, // Link Button
+                        label: 'Gain Instant Access ⚡',
                         url: upgradeUrl
                     }
                 ]
@@ -62,9 +88,9 @@ async function sendTeaserWebhook(item) {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
-        }).catch(err => logger.error('[Discord] Silent fetch error:', err.message));
+        }).catch(err => logger.error('[Discord Teaser] Silent fetch error:', err.message));
     } catch (error) {
-        logger.error('[Discord] Failed to send webhook teaser');
+        logger.error('[Discord Teaser] Failed to send webhook teaser');
     }
 }
 
