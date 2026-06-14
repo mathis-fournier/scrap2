@@ -1,14 +1,56 @@
 import { create } from 'zustand';
 import { io } from 'socket.io-client';
-import { API_URL, getAuthHeaders } from '../services/api';
+import { API_URL, getAuthHeaders, setTokens, clearTokens, authFetch } from '../services/api';
+
+const INACTIVITY_THRESHOLD = 30 * 60 * 1000; // 30 minutes
+let inactivityTimeout = null;
+let activityListener = null;
+
+const resetInactivityTimer = () => {
+    if (inactivityTimeout) clearTimeout(inactivityTimeout);
+
+    inactivityTimeout = setTimeout(() => {
+        console.warn('User inactive for 30 minutes, logging out...');
+        // Force logout
+        window.location.href = '/login?reason=inactivity';
+    }, INACTIVITY_THRESHOLD);
+};
+
+const setupActivityTracking = () => {
+    if (activityListener) return;
+
+    activityListener = () => resetInactivityTimer();
+
+    // Track user activity
+    document.addEventListener('mousedown', activityListener);
+    document.addEventListener('keydown', activityListener);
+    document.addEventListener('scroll', activityListener, true);
+    document.addEventListener('touchstart', activityListener);
+
+    resetInactivityTimer();
+};
+
+const removeActivityTracking = () => {
+    if (inactivityTimeout) clearTimeout(inactivityTimeout);
+    if (activityListener) {
+        document.removeEventListener('mousedown', activityListener);
+        document.removeEventListener('keydown', activityListener);
+        document.removeEventListener('scroll', activityListener, true);
+        document.removeEventListener('touchstart', activityListener);
+        activityListener = null;
+    }
+};
 
 const useStore = create((set, get) => ({
     // State
     items: [],
     watchlist: [],
     cookieDead: false,
-    userTier: 'free', // NEW: Default to free
+    userTier: 'free',
     socket: null,
+    isAuthenticated: false,
+    userId: null,
+    role: null,
 
     // Actions
     setItems: (items) => set({ items }),
@@ -16,11 +58,42 @@ const useStore = create((set, get) => ({
     setCookieDead: (status) => set({ cookieDead: status }),
     setUserTier: (tier) => set({ userTier: tier }),
 
+    setAuthUser: (userId, role) => {
+        set({ isAuthenticated: true, userId, role });
+        setupActivityTracking();
+    },
+
+    logout: async () => {
+        try {
+            const refreshToken = localStorage.getItem('refreshToken');
+            await fetch(`${API_URL}/api/logout`, {
+                method: 'POST',
+                headers: {
+                    ...getAuthHeaders(),
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ refreshToken })
+            });
+        } catch (err) {
+            console.error('Logout error:', err);
+        } finally {
+            clearTokens();
+            removeActivityTracking();
+            set({ isAuthenticated: false, userId: null, role: null, items: [], watchlist: [] });
+            get().disconnectSocket();
+        }
+    },
+
     // Network Actions
     initializeSocket: (userId) => {
         if (get().socket) return;
 
-        const socket = io(API_URL, { query: { userId } });
+        const socket = io(API_URL, {
+            query: { userId },
+            auth: {
+                token: localStorage.getItem('accessToken')
+            }
+        });
 
         socket.on('new-item', (newItem) => {
             set((state) => {
@@ -31,6 +104,11 @@ const useStore = create((set, get) => ({
 
         socket.on('system-event', (event) => {
             if (event.type === 'COOKIE_DEAD') set({ cookieDead: true });
+        });
+
+        socket.on('unauthorized', () => {
+            console.warn('Socket unauthorized, logging out...');
+            get().logout();
         });
 
         set({ socket });
@@ -46,33 +124,26 @@ const useStore = create((set, get) => ({
 
     fetchInitialData: async (userId) => {
         try {
-            const kwRes = await fetch(`${API_URL}/api/keywords/${userId}`, { headers: getAuthHeaders() });
-            const itemsRes = await fetch(`${API_URL}/api/items/${userId}`, { headers: getAuthHeaders() });
-            const settingsRes = await fetch(`${API_URL}/api/settings`, { headers: getAuthHeaders() });
+            const kwRes = await authFetch(`/api/keywords/${userId}`);
+            const itemsRes = await authFetch(`/api/items/${userId}`);
+            const settingsRes = await authFetch('/api/settings');
 
-            // 1. Intercept 401/403 errors and purge the dead token
+            // Check for authentication errors
             if (kwRes.status === 401 || kwRes.status === 403 ||
                 itemsRes.status === 401 || itemsRes.status === 403 ||
                 settingsRes.status === 401 || settingsRes.status === 403) {
 
-                console.warn('Authentication failed or token expired. Clearing session.');
-
-                // 1. Wipe EVERYTHING (token, userId, role)
-                localStorage.clear();
-
-                // 2. Clear the store data just in case
-                set({ items: [], watchlist: [] });
-
-                // 3. Force the app to reload. 
-                // When it reloads, Panel.jsx will read a null userId and show the AuthScreen.
-                window.location.reload();
+                console.warn('Authentication failed. Clearing session.');
+                clearTokens();
+                removeActivityTracking();
+                set({ isAuthenticated: false, userId: null, role: null, items: [], watchlist: [] });
+                window.location.href = '/login?reason=auth_failed';
                 return;
             }
 
             const watchlistData = await kwRes.json();
             const itemsData = await itemsRes.json();
 
-            // 2. Fallback protection: Guarantee we only save arrays into the state
             const watchlist = Array.isArray(watchlistData)
                 ? watchlistData
                 : Array.isArray(watchlistData?.keywords)
@@ -88,12 +159,14 @@ const useStore = create((set, get) => ({
                 const settingsData = await settingsRes.json();
                 set({
                     cookieDead: !settingsData.hasCookie,
-                    userTier: settingsData.tier || 'free' // Capture the tier from your settings/auth endpoint
+                    userTier: settingsData.tier || 'free'
                 });
             }
+
+            // Reset inactivity timer on successful data fetch
+            setupActivityTracking();
         } catch (err) {
             console.error('Failed to fetch initial data', err);
-            // Make sure state doesn't end up undefined on hard network failures
             set({ items: [], watchlist: [] });
         }
     }

@@ -6245,3 +6245,425 @@ Error: getaddrinfo ENOTFOUND improved-chigger-129750.upstash.io
 [2026-06-10 14:56:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
 [2026-06-10 14:56:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
 [2026-06-10 14:56:20] [INFO] 🎯 HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Zipper Damen
+[2026-06-10 19:08:33] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-10 19:08:33] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-10 19:08:33] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-10 19:09:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-10 19:09:20] [INFO] [Worker] Started processing job 5c3d4d26f51bbd678a6fb3c1477189d5 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=cesare%20paciotti&order=newest_first
+[2026-06-10 19:09:21] [INFO] 🎯 HIT! [cesare paciotti] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Scarpe donne Cesare P numero 37 argento
+[2026-06-11 09:16:54] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 09:16:54] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 09:16:54] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:13:14] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 11:13:15] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 11:13:15] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:13:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:13:40] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:13:41] [WARN] [VintedService] Soft session expiration detected in JSON body.
+[2026-06-11 11:13:41] [WARN] [Worker] Cookie died for Delegated User 95c56f51-092c-4af4-bf13-7831ccafb608. Stripping access.
+[2026-06-11 11:14:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:14:00] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:14:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:14:20] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:14:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:14:40] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:15:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:15:00] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:15:00] [INFO] 🎯 STRICT HIT! [chaussure] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Jordan
+[2026-06-11 11:15:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:15:20] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:15:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:15:40] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:15:51] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 11:15:52] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:15:52] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 11:16:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:16:00] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:16:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:16:20] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:17:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:17:20] [INFO] [Worker] Started processing job 7995058301eba71868f5c6fb2502132a for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=shortnike1&order=newest_first
+[2026-06-11 11:22:27] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 11:22:27] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:22:27] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 11:23:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:23:00] [INFO] [Worker] Started processing job 595cc6dc4f0694995acb7faa453811a1 for URL: https://www.vinted.fr/api/v2/catalog/items?order=newest_first&price_to=200
+[2026-06-11 11:23:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:23:20] [INFO] [Worker] Started processing job 595cc6dc4f0694995acb7faa453811a1 for URL: https://www.vinted.fr/api/v2/catalog/items?order=newest_first&price_to=200
+[2026-06-11 11:23:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:23:40] [INFO] [Worker] Started processing job 595cc6dc4f0694995acb7faa453811a1 for URL: https://www.vinted.fr/api/v2/catalog/items?order=newest_first&price_to=200
+[2026-06-11 11:24:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:24:00] [INFO] [Worker] Started processing job 595cc6dc4f0694995acb7faa453811a1 for URL: https://www.vinted.fr/api/v2/catalog/items?order=newest_first&price_to=200
+[2026-06-11 11:24:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:24:20] [INFO] [Worker] Started processing job 595cc6dc4f0694995acb7faa453811a1 for URL: https://www.vinted.fr/api/v2/catalog/items?order=newest_first&price_to=200
+[2026-06-11 11:27:08] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 11:27:08] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:27:08] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 11:28:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:28:20] [INFO] [Worker] Started processing job 4233b95738bbbfb059ee3fb45feaa01c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=200
+[2026-06-11 11:28:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:28:40] [INFO] [Worker] Started processing job 4233b95738bbbfb059ee3fb45feaa01c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=200
+[2026-06-11 11:29:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:29:00] [INFO] [Worker] Started processing job 4233b95738bbbfb059ee3fb45feaa01c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=200
+[2026-06-11 11:29:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:29:20] [INFO] [Worker] Started processing job 4233b95738bbbfb059ee3fb45feaa01c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=200
+[2026-06-11 11:32:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:32:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:33:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:33:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:33:00] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Sport Jacke Original M
+[2026-06-11 11:40:04] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 11:40:04] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 11:40:04] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 11:40:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:40:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:40:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:40:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:40:40] [INFO] 🎯 STRICT HIT! [n] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Supreme
+[2026-06-11 11:41:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:41:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:41:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:41:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:41:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:41:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:41:40] [INFO] 🎯 STRICT HIT! [n] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Dn Schuhe
+[2026-06-11 11:43:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:43:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 11:43:20] [INFO] 🎯 STRICT HIT! [niketitleevrwhr] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Air Jordan Sneaker high EUR 41, UK 7, US 9.5
+[2026-06-11 11:56:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:56:00] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:56:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:56:20] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:56:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:56:40] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 11:57:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 11:57:00] [INFO] [Worker] Started processing job e410acf03fb3d6142b673eddeb16df4e for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=chaussure&order=newest_first
+[2026-06-11 12:03:00] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 12:03:01] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 12:03:01] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 12:03:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:03:20] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 12:03:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:03:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 12:03:56] [ERROR] createKeyword failed: Duplicata du champ 'Nike-95c56f51-092c-4af4-bf13-7831ccafb608' pour la clef 'keywords.unique_user_keyword'
+Error: Duplicata du champ 'Nike-95c56f51-092c-4af4-bf13-7831ccafb608' pour la clef 'keywords.unique_user_keyword'
+    at createKeyword (C:\Users\akhid\Documents\scrap2\server\src\controllers\keywordController.js:43:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-11 12:04:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:04:00] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 12:04:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:04:20] [INFO] [Worker] Started processing job 753bfb1ce42b282268cd78325e3d520c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=Nike&order=newest_first
+[2026-06-11 12:04:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:04:40] [INFO] [Worker] Started processing job 753bfb1ce42b282268cd78325e3d520c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=Nike&order=newest_first
+[2026-06-11 12:04:40] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trackpants Wide Leg Baggy Y2k Dunkelblau Weiß Größe M
+[2026-06-11 12:05:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:05:00] [INFO] [Worker] Started processing job 753bfb1ce42b282268cd78325e3d520c for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=Nike&order=newest_first
+[2026-06-11 12:05:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:05:40] [INFO] [Worker] Started processing job fffa8af508c3cc11a8946d3d182f1584 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike tech fleecvest
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike P-6000
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike bimbo
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike dunk low all star
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Chaussettes Nike EveryDay X3 | Dri-Fit | 43-46 | Blanches | cn03
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trackpants Open Leg Baggy Schwarz Y2k Original Größe XL
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike air
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike air blanche
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Dunk Sky Hi Plataforma
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Sweatjacke S
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike air force
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Jordan 33
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Air Zoom Pegasus 41 CM – Taglia 43 EU
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike baby sneaker
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike sport broekje
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Free TR Turnschuhe Sneaker Fly Wire Gr. 45 schwarz-rot
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trackpants Open Leg Baggy Schwarz Y2k Original Größe XL
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike beige sweater
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Ensemble Nike fille 2 ans
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Hoodie
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Rotes Nike Golf dri fit Shirt
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Maillot Japon Nike bleu édition spéciale taille L
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trackpants Open Leg Baggy Schwarz Beige Y2k Original Größe XXL
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Short Nike Dri-FIT Black Size L Vintage 2K Retro Limited Edition Sports Shorts
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Scarpe Nike Omini Multi-Court GS
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Deportivas Nike talla 19.5
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike T-Shirt
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Pull nike mixte
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Basket nike
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Camiseta deportiva Nike Dri-Fit amarillo neón talla S
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Short Nike Baseball gris
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trainings Pullover
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Pegasus Premium Black/Metallic Silver
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Air Max 97
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Zapatillas bebé Nike Star Runner 3 Negras - Talla 22
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Haut de training nike portugal enfant
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Basket Nike
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Air Force One Low Drop Type N.354
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : maglietta nike sportiva
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Kobe ad 2017
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-Shirt Nike
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Trackpants Wide Leg Baggy Y2k Dunkelblau Weiß Größe M
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Shorts Nike Sportivi in Nylon Bianchi – Taglia L Ragazzo (12-13 anni / 152-158 cm)
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Dri-FIT T-Shirt und Short Set
+[2026-06-11 12:05:40] [INFO] 🎯 STRICT HIT! [nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Top Nike
+[2026-06-11 12:06:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 12:06:20] [INFO] [Worker] Started processing job 3c9c0358dc04c64fed5a42f690352542 for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=Nike&order=newest_first&price_from=1&price_to=5
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Grauer Nike Pullover, etwas kürzer geschnitten, Gr. M
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike T-shirt Viola con Grafica Palloncini "Air"
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike set
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-shirt Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Kids Nike shorts
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-shirt bleu ciel Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Grijs tshirt Nike x Liverpool maat 164
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike tech fleecvest
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Ensemble Nike 12M
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Maglietta grigia Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-Shirt Nike Swoosh | Homme Taille XL | Logo brodé
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike sport broekje
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Set due canotte sportive  Freddy L e Nike S
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Deportivas Nike talla 19.5
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Basket Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Scarpe Nike AIR MAX  97 Iridescent n 41 usate in discrete condizioni
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-Shirt Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Running Nike top
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Pro Shorts
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Trui Nike medium
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Brassière Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Tee shirt nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : pull nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Basket Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Zwart tshirt Nike basketbal maat 152
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Calzini alti Nike donna tag. 36-41
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Basket Nike bébé
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T-shirt
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Camiseta Deportiva Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike T-shirt maat M
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Bonnet et chaussettes
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Chandal nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Top deportivo Nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : T shirt Nike Xs
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Jacke 128
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike sneakers
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : pull nike enfant
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Chaussettes
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike Jogginghose
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike t shirt maat L
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Sudadera hoodie Chicago Bulls roja con logo grande
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike sport shirt
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Porter une fois
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Trui nike
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Veste Nike Blanc Gris - Taille 12 ans Enfant
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike trui vintage
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Nike longsleeve dames zwart wit xs
+[2026-06-11 12:06:20] [INFO] 🎯 STRICT HIT! [Nike] for User 95c56f51-092c-4af4-bf13-7831ccafb608 : Bas de jogging Nike
+[2026-06-11 21:09:10] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 21:09:11] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 21:09:11] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 21:14:01] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 21:14:01] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 21:14:01] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 21:14:59] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 21:14:59] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 21:14:59] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 21:19:02] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-11 21:19:03] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-11 21:19:03] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-11 21:24:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 21:24:40] [INFO] [Worker] Started processing job df68bfc2e6b2f705f13544142f788f9a for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=7
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike broekje
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Drifit Sportshirt
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike FC Barcelone (FCB) Officiel & Sportswear Taille S
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Basket Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike miller T-shirt
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Brazil god jersey
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short FC Barcelone
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Oberteil
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga corta
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike Sport
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike tshirt
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweatjacke
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike slim fit pants
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike sporthose
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Chaussures de foot salle / sport salle / basket Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike rouge dri-fit
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogginghose
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sport T-Shirt
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogging Noir Simple
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt da sport nike donna nuova originale
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bleu Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Dri-FIT Shorts – Schwarz/Weiß – guter Zustand
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike noir
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike NBA Lakers Body – 18 Monate – wie neu
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalon Nike talla S de adulto
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga larga polar de hombre
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweat shirt pull nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camisa de deporte
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt/ Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike bleu
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike s
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Gr. 128
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : maglia nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Mädchen sneaker
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bambino
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike vintage football club barcelona
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Hose in 158-170cm
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalón Nike talla S adulto
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Mercurial Schienbeinschoner gr. XL 180-200 cm
+[2026-06-11 21:24:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-Shirt Nike
+[2026-06-11 21:25:00] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 21:25:00] [INFO] [Worker] Started processing job df68bfc2e6b2f705f13544142f788f9a for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=7
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike broekje
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Drifit Sportshirt
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike FC Barcelone (FCB) Officiel & Sportswear Taille S
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Basket Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Chaussures de foot salle / sport salle / basket Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike miller T-shirt
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Court Borough Low 2 Gr.27
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Brazil god jersey
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short FC Barcelone
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Oberteil
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga corta
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike Sport
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike tshirt
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweatjacke
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike slim fit pants
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike sporthose
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike rouge dri-fit
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogginghose
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogging Noir Simple
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sport T-Shirt
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt da sport nike donna nuova originale
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bleu Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Dri-FIT Shorts – Schwarz/Weiß – guter Zustand
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike noir
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike NBA Lakers Body – 18 Monate – wie neu
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalon Nike talla S de adulto
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga larga polar de hombre
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweat shirt pull nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camisa de deporte
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt/ Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike bleu
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Gr. 128
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : maglia nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike s
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Mädchen sneaker
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bambino
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike vintage football club barcelona
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalón Nike talla S adulto
+[2026-06-11 21:25:00] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Hose in 158-170cm
+[2026-06-11 21:25:20] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 21:25:20] [INFO] [Worker] Started processing job df68bfc2e6b2f705f13544142f788f9a for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=7
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Court Borough Low 2 Gr.27
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Oberteil
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike broekje
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Drifit Sportshirt
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike FC Barcelone (FCB) Officiel & Sportswear Taille S
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Basket Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Chaussures de foot salle / sport salle / basket Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike miller T-shirt
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Ensemble Nike bleu blanc octopus
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Brazil god jersey
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Calzini nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short FC Barcelone
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga corta
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike Sport
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike tshirt
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweatjacke
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike slim fit pants
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike sporthose
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike rouge dri-fit
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogging Noir Simple
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogginghose
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sport T-Shirt
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt da sport nike donna nuova originale
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bleu Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Dri-FIT Shorts – Schwarz/Weiß – guter Zustand
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike noir
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike NBA Lakers Body – 18 Monate – wie neu
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalon Nike talla S de adulto
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga larga polar de hombre
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweat shirt pull nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camisa de deporte
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt/ Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike bleu
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike s
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Gr. 128
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : maglia nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Mädchen sneaker
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike vintage football club barcelona
+[2026-06-11 21:25:20] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bambino
+[2026-06-11 21:25:40] [INFO] ⏱️ [Cron] Dispatched 1 unique URL searches for 1 total active trackers.
+[2026-06-11 21:25:40] [INFO] [Worker] Started processing job df68bfc2e6b2f705f13544142f788f9a for URL: https://www.vinted.fr/api/v2/catalog/items?search_text=nike&order=newest_first&price_to=7
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-Shirt de sport | Nike | Style Running | Bleu | Taille M | Troué | TS003
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Court Borough Low 2 Gr.27
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Ensemble Nike bleu blanc octopus
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Oberteil
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Drifit Sportshirt
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike broekje
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Drifit Sportshirt
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sport Top
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike FC Barcelone (FCB) Officiel & Sportswear Taille S
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Basket Nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Chaussures de foot salle / sport salle / basket Nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike miller T-shirt
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Brazil god jersey
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sneaker
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short FC Barcelone
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tee-shirt Nike Sport
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga corta
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike tshirt
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweatjacke
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike slim fit pants
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike sporthose
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike rouge dri-fit
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogginghose
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Jogging Noir Simple
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Sport T-Shirt
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt da sport nike donna nuova originale
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt bleu Nike
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike Dri-FIT Shorts – Schwarz/Weiß – guter Zustand
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike setje
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike noir
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Pantalon Nike talla S de adulto
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Nike NBA Lakers Body – 18 Monate – wie neu
+[2026-06-11 21:25:40] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camiseta manga larga polar de hombre
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Camisa de deporte
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Sweat shirt pull nike
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Tshirt/ Nike
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Maglietta Nike
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike bleu
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Nike s
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : Short Gr. 128
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : maglia nike
+[2026-06-11 21:25:41] [INFO] 🎯 STRICT HIT! [Test nike low price] for User e3bdfba1-8039-4c33-ab4b-34a4ee7a16d4 : T-shirt Nike
+[2026-06-12 11:18:50] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-12 11:18:50] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-12 11:18:50] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-13 11:58:11] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-13 11:58:11] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-13 11:58:11] [INFO] 🚀 API & Websockets running on port 3000
+[2026-06-14 15:54:47] [INFO] 🚀 Worker listening for deduplicated URL batches...
+[2026-06-14 15:54:47] [INFO] 🚀 Cron Injector started. Adding unique URL batches every 20-30 seconds...
+[2026-06-14 15:54:47] [INFO] 🚀 API & Websockets running on port 3000

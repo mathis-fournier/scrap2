@@ -23,7 +23,7 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
 
         const body = response.body;
 
-        // 1. Check for the "Soft" Cookie Death (Vinted returned JSON, but blocked us)
+        // 1. Check for the "Soft" Cookie Death
         if (!body || !body.items) {
             const bodyStr = JSON.stringify(body || {}).toLowerCase();
 
@@ -41,21 +41,21 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
 
         const items = body.items;
 
-        // 2. Process real items
+        // 2. Process ALL real items
         if (items.length > 0) {
             const realItems = items.filter(item => !item.is_promoted && !item.promoted);
 
             if (realItems.length > 0) {
-                const firstItem = realItems[0];
-                return {
-                    id: firstItem.id.toString(),
-                    titre: firstItem.title,
-                    prix: firstItem.price?.amount || firstItem.price || 'N/A',
-                    lien: firstItem.url,
-                    image: firstItem.photo ? firstItem.photo.url : 'https://via.placeholder.com/300?text=No+Image',
-                    brand: firstItem.brand_title || 'N/A',
-                    size: firstItem.size_title || 'N/A',
-                };
+                // Return the full array instead of just realItems[0]
+                return realItems.map(item => ({
+                    id: item.id.toString(),
+                    titre: item.title,
+                    prix: item.price?.amount || item.price || 'N/A',
+                    lien: item.url,
+                    image: item.photo ? item.photo.url : 'https://via.placeholder.com/300?text=No+Image',
+                    brand: item.brand_title || 'N/A',
+                    size: item.size_title || 'N/A',
+                }));
             }
         }
 
@@ -69,12 +69,10 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
 
         const combinedBody = rawBody || stringBody;
 
-        // 1. Explicit 401 Unauthorized (Clean Cookie Death)
         if (status === 401) {
             return { error: 'SESSION_EXPIRED' };
         }
 
-        // 2. The HTML Parse Error (Vinted redirected us to a login page instead of giving JSON)
         if (error.name === 'ParseError' || error.code === 'ERR_BODY_PARSE_FAILURE') {
             if (combinedBody.includes('cloudflare') || combinedBody.includes('datadome') || combinedBody.includes('challenge-platform')) {
                 return { error: 'PROXY_BANNED' };
@@ -83,7 +81,6 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
             return { error: 'SESSION_EXPIRED' };
         }
 
-        // 3. 403 Forbidden / 429 Too Many Requests
         if (status === 403 || status === 429) {
             if (
                 combinedBody.includes('cloudflare') ||
@@ -101,13 +98,11 @@ async function scanVinted(apiUrl, cookie, userAgent, proxyUrl) {
             return { error: 'PROXY_BANNED' };
         }
 
-        // 4. Pure Network/Connection Errors
         if (['ECONNRESET', 'ETIMEDOUT', 'ECONNABORTED', 'ERR_NON_2XX_3XX_RESPONSE', 'EHOSTUNREACH', 'ENOTFOUND'].includes(error.code)) {
             logger.warn(`[VintedService] Network timeout/reset for URL: ${apiUrl} (Code: ${error.code})`);
             return { error: 'PROXY_BANNED' };
         }
 
-        // 5. Total Unknown Failure
         logger.error(error.message || error, `[VintedService] Unhandled scraper crash for URL ${apiUrl}`);
         return null;
     }

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Zap } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { API_URL } from '../services/api';
+import { API_URL, setTokens } from '../services/api';
+import useStore from '../store/useStore';
 
 export default function AuthScreen() {
     const [isLogin, setIsLogin] = useState(true);
@@ -9,15 +10,19 @@ export default function AuthScreen() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [tosAccepted, setTosAccepted] = useState(false);
-
+    const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
+    const setAuthUser = useStore(state => state.setAuthUser);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
+        setLoading(true);
 
         if (!isLogin && !tosAccepted) {
-            return setError('You must accept the Terms of Service to register.');
+            setError('You must accept the Terms of Service to register.');
+            setLoading(false);
+            return;
         }
 
         const endpoint = isLogin ? '/api/login' : '/api/register';
@@ -32,15 +37,19 @@ export default function AuthScreen() {
 
             if (!res.ok) throw new Error(data.error);
 
-            // Store credentials
-            localStorage.setItem('token', data.token);
+            // Store both access and refresh tokens
+            setTokens(data.accessToken, data.refreshToken);
             localStorage.setItem('userId', data.userId);
             localStorage.setItem('role', data.role || 'user');
 
-            navigate('/app');
+            // Set auth state in store
+            setAuthUser(data.userId, data.role || 'user');
 
+            navigate('/app');
         } catch (err) {
             setError(err.message);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -61,28 +70,28 @@ export default function AuthScreen() {
                     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                         <div>
                             <label className="block mb-2 text-sm font-medium text-neutral-400">Email</label>
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
+                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required disabled={loading} />
                         </div>
                         <div>
                             <label className="block mb-2 text-sm font-medium text-neutral-400">Password</label>
-                            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required />
+                            <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full px-4 py-3 text-white border rounded-xl border-neutral-700 bg-neutral-950 focus:border-teal-500 focus:outline-none" required disabled={loading} />
                         </div>
 
                         {!isLogin && (
                             <div className="flex items-start gap-3 mt-2">
-                                <input type="checkbox" id="tos" checked={tosAccepted} onChange={(e) => setTosAccepted(e.target.checked)} className="mt-1 accent-teal-500" />
+                                <input type="checkbox" id="tos" checked={tosAccepted} onChange={(e) => setTosAccepted(e.target.checked)} className="mt-1 accent-teal-500" disabled={loading} />
                                 <label htmlFor="tos" className="text-xs leading-relaxed text-neutral-400">
                                     I understand this tool automates requests. I am using a secondary account. FinderPro is not responsible for any account bans.
                                 </label>
                             </div>
                         )}
 
-                        <button type="submit" className="w-full py-3 mt-2 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500">
-                            {isLogin ? 'Sign In' : 'Sign Up'}
+                        <button type="submit" disabled={loading} className="w-full py-3 mt-2 font-medium text-white transition-colors bg-teal-600 rounded-xl hover:bg-teal-500 disabled:opacity-50 disabled:cursor-not-allowed">
+                            {loading ? 'Loading...' : (isLogin ? 'Sign In' : 'Sign Up')}
                         </button>
                     </form>
 
-                    <button onClick={() => { setIsLogin(!isLogin); setError(''); setTosAccepted(false); }} className="w-full mt-4 text-sm text-center transition-colors text-neutral-500 hover:text-white">
+                    <button onClick={() => { setIsLogin(!isLogin); setError(''); setTosAccepted(false); }} disabled={loading} className="w-full mt-4 text-sm text-center transition-colors text-neutral-500 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed">
                         {isLogin ? "Don't have an account? Sign up" : 'Already have an account? Sign in'}
                     </button>
                 </div>

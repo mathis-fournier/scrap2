@@ -95,7 +95,6 @@ export default function Dashboard({ userId, role, onLogout }) {
         localStorage.removeItem('token');
         localStorage.removeItem('userId');
         localStorage.removeItem('role');
-        // Call the parent onLogout prop if provided, otherwise just navigate
         if (onLogout) onLogout();
         navigate('/login');
     };
@@ -105,13 +104,13 @@ export default function Dashboard({ userId, role, onLogout }) {
     return (
         <div className="flex w-full h-screen overflow-hidden font-sans text-neutral-200 bg-neutral-950">
             {/* Mobile Nav Header */}
-            <div className="fixed top-0 z-50 flex items-center justify-between w-full px-4 py-3 border-b md:hidden border-neutral-800 bg-neutral-900">
+            <div className="fixed top-0 z-50 flex items-center justify-between w-full px-4 py-3 border-b md:hidden border-neutral-800 bg-neutral-900/90 backdrop-blur-md">
                 <div className="flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-teal-500" />
-                    <span className="font-bold text-white">gratte.sh</span>
+                    <Zap className="w-5 h-5 text-indigo-500" />
+                    <span className="font-bold text-white tracking-wide">gratte.sh</span>
                 </div>
-                <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="text-neutral-400">
-                    {isSidebarOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="p-2 text-neutral-400 bg-neutral-800/50 rounded-lg">
+                    {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                 </button>
             </div>
 
@@ -119,123 +118,140 @@ export default function Dashboard({ userId, role, onLogout }) {
             <aside className={`fixed inset-y-0 left-0 z-40 flex h-full w-64 flex-col border-r border-neutral-800 bg-neutral-900/95 backdrop-blur-xl transition-transform duration-300 md:static md:translate-x-0 ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="items-center justify-between hidden h-16 px-6 border-b md:flex border-neutral-800/60 md:h-20">
                     <div className="flex items-center gap-3">
-                        <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 shadow-[0_0_15px_rgba(20,184,166,0.3)] md:h-10 md:w-10">
-                            <Zap className="w-4 h-4 text-white fill-white" />
+                        <div className="flex items-center justify-center w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-600 shadow-[0_0_15px_rgba(99,102,241,0.25)] md:h-10 md:w-10">
+                            <Zap className="w-5 h-5 text-white fill-white" />
                         </div>
-                        <span className="text-lg font-bold tracking-wide text-white md:text-xl">gratte<span className="text-teal-500">.sh</span></span>
+                        <span className="text-xl font-bold tracking-wide text-white">gratte<span className="text-indigo-400">.sh</span></span>
                     </div>
                 </div>
 
                 <nav className="flex-1 px-4 py-6 overflow-y-auto no-scrollbar">
-                    <div className="px-3 mb-4 text-xs font-semibold tracking-wider uppercase text-neutral-500">Platforms</div>
-                    {platforms.map((platform) => (
-                        <li key={platform.name} className="list-none">
-                            <button onClick={() => { setActiveTab(platform.name); setIsSidebarOpen(false); }} className={`group relative mb-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-300 ${activeTab === platform.name ? 'bg-teal-500/10 text-teal-400' : 'text-neutral-400 hover:bg-neutral-800/60 hover:text-neutral-200'}`}>
-                                <platform.icon className="w-5 h-5" /> {platform.name}
+                    <div className="px-3 mb-3 text-xs font-semibold tracking-wider uppercase text-neutral-500">Monitors</div>
+                    <ul className="space-y-1">
+                        {platforms.map((platform) => (
+                            <li key={platform.name}>
+                                <button onClick={() => { setActiveTab(platform.name); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-200 ${activeTab === platform.name ? 'bg-indigo-500/10 text-indigo-400' : 'text-neutral-400 hover:bg-neutral-800/50 hover:text-neutral-200'}`}>
+                                    <platform.icon className={`w-5 h-5 ${activeTab === platform.name ? 'text-indigo-400' : 'text-neutral-500'}`} /> {platform.name}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+
+                    <div className="px-3 mt-8 mb-3 text-xs font-semibold tracking-wider uppercase text-neutral-500">System</div>
+                    <ul className="space-y-1">
+                        <li>
+                            <button onClick={() => { setActiveTab('Settings'); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-200 ${activeTab === 'Settings' ? 'bg-teal-500/10 text-teal-400' : 'text-neutral-400 hover:bg-neutral-800/50 hover:text-neutral-200'}`}>
+                                <Settings className={`w-5 h-5 ${activeTab === 'Settings' ? 'text-teal-400' : 'text-neutral-500'}`} /> Tracker Settings
                             </button>
                         </li>
-                    ))}
 
-                    <div className="px-3 mt-8 mb-4 text-xs font-semibold tracking-wider uppercase text-neutral-500">System</div>
-                    <li className="list-none">
-                        <button onClick={() => { setActiveTab('Settings'); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-300 ${activeTab === 'Settings' ? 'bg-teal-500/10 text-teal-400' : 'text-neutral-400 hover:bg-neutral-800/60 hover:text-neutral-200'}`}>
-                            <Settings className="w-5 h-5" /> Settings
-                        </button>
-                    </li>
-
-                    {role === 'admin' && (
-                        <li className="mt-2 list-none">
-                            <button onClick={() => { setActiveTab('AdminPanel'); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-300 ${activeTab === 'AdminPanel' ? 'bg-indigo-500/10 text-indigo-400' : 'text-neutral-400 hover:bg-neutral-800/60 hover:text-neutral-200'}`}>
-                                <ShieldCheck className="w-5 h-5 text-indigo-500" /> Admin Panel
-                            </button>
-                        </li>
-                    )}
+                        {role === 'admin' && (
+                            <li>
+                                <button onClick={() => { setActiveTab('AdminPanel'); setIsSidebarOpen(false); }} className={`group relative flex w-full items-center gap-3 rounded-xl px-3 py-3 text-sm font-medium transition-all duration-200 ${activeTab === 'AdminPanel' ? 'bg-purple-500/10 text-purple-400' : 'text-neutral-400 hover:bg-neutral-800/50 hover:text-neutral-200'}`}>
+                                    <ShieldCheck className={`w-5 h-5 ${activeTab === 'AdminPanel' ? 'text-purple-400' : 'text-neutral-500'}`} /> Admin Panel
+                                </button>
+                            </li>
+                        )}
+                    </ul>
                 </nav>
 
                 <div className="p-4 border-t border-neutral-800/60">
-                    <button onClick={handleLogout} className="flex items-center justify-center w-full gap-2 px-4 py-3 text-sm font-medium text-red-400 transition-colors rounded-xl bg-red-500/10 hover:bg-red-500/20">
+                    <button onClick={handleLogout} className="flex items-center justify-center w-full gap-2 px-4 py-3 text-sm font-semibold text-neutral-400 transition-colors border rounded-xl border-neutral-800 bg-neutral-900 hover:bg-red-500/10 hover:text-red-400 hover:border-red-500/20">
                         Sign Out
                     </button>
                 </div>
             </aside>
 
             {/* Main Content */}
-            <main className="flex-1 p-4 pt-20 overflow-y-auto md:p-8 md:pt-8">
+            <main className="flex-1 p-4 pt-20 overflow-y-auto md:p-8 md:pt-8 bg-neutral-950">
 
                 {/* Global Cookie Warning */}
                 {cookieDead && activeTab !== 'AdminPanel' && activeTab !== 'Settings' && (
-                    <div className="flex items-center justify-between p-4 mb-6 font-medium text-red-400 border border-red-500 bg-red-500/20 rounded-xl">
-                        <span>⚠️ Scanning Halted: Your Vinted session cookie is missing or has expired.</span>
-                        <button onClick={() => setActiveTab('Settings')} className="px-4 py-2 text-sm font-bold text-white transition-colors bg-red-500 rounded-lg hover:bg-red-600">Update Now</button>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 mb-8 border rounded-xl border-red-500/50 bg-red-500/10">
+                        <div className="flex items-center gap-3 text-red-400 font-medium">
+                            <ShieldCheck className="w-5 h-5 shrink-0" />
+                            <span>Scanning Halted: Your Vinted session cookie is missing or has expired.</span>
+                        </div>
+                        <button onClick={() => setActiveTab('Settings')} className="px-5 py-2.5 text-sm font-semibold text-white transition-colors bg-red-500/80 rounded-lg hover:bg-red-500 whitespace-nowrap">
+                            Update Configuration
+                        </button>
                     </div>
                 )}
 
-                <header className="flex flex-col justify-between mb-6 md:mb-8 sm:flex-row sm:items-end">
+                <header className="flex flex-col justify-between mb-8 sm:flex-row sm:items-end">
                     <div>
                         <h1 className="text-2xl font-bold tracking-tight text-white md:text-3xl">
-                            {activeTab === 'Settings' ? 'Scraper Settings' : activeTab === 'AdminPanel' ? 'System Overview' : `${activeTab} Monitor`}
+                            {activeTab === 'Settings' ? 'Tracker Settings' : activeTab === 'AdminPanel' ? 'System Overview' : `${activeTab} Monitor`}
                         </h1>
+                        <p className="text-sm text-neutral-400 mt-1">
+                            {activeTab === 'Settings' ? 'Configure your endpoints and keywords.' : activeTab === 'AdminPanel' ? 'Platform health and user metrics.' : `Viewing incoming drops for ${activeTab}.`}
+                        </p>
                     </div>
-                    <div className="mt-3 sm:mt-0">
-                        <span className="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium rounded-full text-neutral-300 bg-neutral-900/80 border border-neutral-800">
-                            <span className="text-neutral-500">Next scan in</span>
-                            <span className="font-semibold text-white">{Math.floor(nextScanInSeconds / 60)}:{String(nextScanInSeconds % 60).padStart(2, '0')}</span>
-                        </span>
-                    </div>
+
+                    {/* Hide Scan timer on settings/admin pages */}
+                    {(activeTab !== 'Settings' && activeTab !== 'AdminPanel') && (
+                        <div className="mt-4 sm:mt-0">
+                            <span className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full text-neutral-300 bg-neutral-900 border border-neutral-800 shadow-sm">
+                                <Activity className="w-4 h-4 text-indigo-400 animate-pulse" />
+                                <span className="text-neutral-500">Next scan in</span>
+                                <span className="font-semibold text-white">{Math.floor(nextScanInSeconds / 60)}:{String(nextScanInSeconds % 60).padStart(2, '0')}</span>
+                            </span>
+                        </div>
+                    )}
                 </header>
 
                 {/* Sub-components Routing */}
                 {activeTab === 'AdminPanel' ? (
                     <div className="space-y-6">
                         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/50">
-                                <div className="flex items-center gap-3 mb-2 text-neutral-400"><Users className="w-5 h-5" /> Total Users</div>
+                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/40">
+                                <div className="flex items-center gap-3 mb-3 text-neutral-400"><Users className="w-5 h-5 text-blue-400" /> Total Users</div>
                                 <div className="text-3xl font-bold text-white">{adminStats.users}</div>
                             </div>
-                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/50">
-                                <div className="flex items-center gap-3 mb-2 text-neutral-400"><Activity className="w-5 h-5" /> Active Trackers</div>
+                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/40">
+                                <div className="flex items-center gap-3 mb-3 text-neutral-400"><Activity className="w-5 h-5 text-indigo-400" /> Active Trackers</div>
                                 <div className="text-3xl font-bold text-white">{adminStats.keywords}</div>
                             </div>
-                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/50">
-                                <div className="flex items-center gap-3 mb-2 text-neutral-400"><Package className="w-5 h-5" /> Items Scraped</div>
+                            <div className="p-6 border rounded-2xl border-neutral-800 bg-neutral-900/40">
+                                <div className="flex items-center gap-3 mb-3 text-neutral-400"><Package className="w-5 h-5 text-emerald-400" /> Items Scraped</div>
                                 <div className="text-3xl font-bold text-white">{adminStats.items}</div>
                             </div>
                         </div>
 
-                        <div className="overflow-hidden border rounded-2xl border-neutral-800 bg-neutral-900/50">
+                        <div className="overflow-hidden border rounded-2xl border-neutral-800 bg-neutral-900/40">
                             <div className="p-6 border-b border-neutral-800">
                                 <h2 className="text-lg font-semibold text-white">Registered Accounts</h2>
                             </div>
                             <div className="overflow-x-auto">
                                 <table className="w-full text-sm text-left text-neutral-400">
-                                    <thead className="text-xs uppercase bg-neutral-950/50 text-neutral-500">
+                                    <thead className="text-xs uppercase bg-neutral-950/50 text-neutral-500 border-b border-neutral-800/60">
                                         <tr>
-                                            <th className="px-6 py-4">Email</th>
-                                            <th className="px-6 py-4">Role</th>
-                                            <th className="px-6 py-4">Proxy Setup</th>
-                                            <th className="px-6 py-4">Cookie Health</th>
-                                            <th className="px-6 py-4">Trackers</th>
-                                            <th className="px-6 py-4">Actions</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Email</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Role</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Proxy Setup</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Cookie Health</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Trackers</th>
+                                            <th className="px-6 py-4 font-medium tracking-wider">Actions</th>
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-neutral-800">
+                                    <tbody className="divide-y divide-neutral-800/60">
                                         {adminUsers.map((user) => (
-                                            <tr key={user.id} className="hover:bg-neutral-800/30">
+                                            <tr key={user.id} className="hover:bg-neutral-800/20 transition-colors">
                                                 <td className="px-6 py-4 font-medium text-white">{user.email}</td>
                                                 <td className="px-6 py-4">
-                                                    <span className={`px-2 py-1 text-xs rounded-full ${user.role === 'admin' ? 'bg-indigo-500/20 text-indigo-400' : 'bg-neutral-800 text-neutral-300'}`}>
+                                                    <span className={`px-2.5 py-1 text-xs font-medium rounded-full ${user.role === 'admin' ? 'bg-purple-500/10 border border-purple-500/20 text-purple-400' : 'bg-neutral-800 border border-neutral-700 text-neutral-300'}`}>
                                                         {user.role}
                                                     </span>
                                                 </td>
                                                 <td className="px-6 py-4">{user.proxy_url ? '✅ Assigned' : '❌ None'}</td>
                                                 <td className="px-6 py-4">
-                                                    <span className={`px-2 py-1 text-xs rounded-full ${user.cookie_status === 'Active' ? 'bg-teal-500/20 text-teal-400' : 'bg-red-500/20 text-red-400'}`}>
+                                                    <span className={`px-2.5 py-1 text-xs font-medium rounded-full ${user.cookie_status === 'Active' ? 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-400' : 'bg-red-500/10 border border-red-500/20 text-red-400'}`}>
                                                         {user.cookie_status}
                                                     </span>
                                                 </td>
-                                                <td className="px-6 py-4">{user.keyword_count}</td>
+                                                <td className="px-6 py-4 font-medium">{user.keyword_count}</td>
                                                 <td className="px-6 py-4">
-                                                    <button onClick={() => deleteUser(user.id)} disabled={user.role === 'admin'} className="p-2 transition-colors disabled:opacity-50 text-neutral-500 hover:text-red-400">
+                                                    <button onClick={() => deleteUser(user.id)} disabled={user.role === 'admin'} className="p-2 transition-colors rounded-lg disabled:opacity-30 text-neutral-500 hover:bg-red-500/10 hover:text-red-400">
                                                         <Trash2 className="w-5 h-5" />
                                                     </button>
                                                 </td>
@@ -253,9 +269,12 @@ export default function Dashboard({ userId, role, onLogout }) {
                         {filteredItems.length > 0 ? (
                             filteredItems.map((item) => <ItemCard key={item.id} item={item} />)
                         ) : (
-                            <div className="flex flex-col items-center justify-center h-60 col-span-full rounded-2xl border-2 border-dashed border-neutral-800/50 bg-neutral-900/20">
-                                <Zap className="w-8 h-8 mb-4 text-neutral-700" />
-                                <span className="font-medium text-neutral-500">Waiting for drops...</span>
+                            <div className="flex flex-col items-center justify-center h-64 col-span-full rounded-2xl border-2 border-dashed border-neutral-800 bg-neutral-900/20">
+                                <div className="p-4 rounded-full bg-neutral-900 mb-4">
+                                    <Zap className="w-8 h-8 text-neutral-600" />
+                                </div>
+                                <span className="font-medium text-neutral-400 text-lg">Waiting for drops...</span>
+                                <p className="text-sm text-neutral-500 mt-1">Make sure you have active trackers set up.</p>
                             </div>
                         )}
                     </div>

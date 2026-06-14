@@ -5,17 +5,127 @@ const db = require('../db');
 const logger = require('../logger');
 
 const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || JWT_SECRET + '_refresh';
+const ACCESS_TOKEN_EXPIRY = process.env.ACCESS_TOKEN_EXPIRY || '15m'; // 15 minutes
+const REFRESH_TOKEN_EXPIRY = process.env.REFRESH_TOKEN_EXPIRY || '7d'; // 7 days
+const INACTIVITY_TIMEOUT = parseInt(process.env.INACTIVITY_TIMEOUT || '1800000'); // 30 minutes in ms
+
 if (!JWT_SECRET) throw new Error("FATAL: JWT_SECRET is not defined");
+
+/**
+ * Generate access and refresh tokens
+ */
+function generateTokens(userId, role) {
+    const accessToken = jwt.sign(
+        { userId, role, type: 'access' },
+        JWT_SECRET,
+        { expiresIn: ACCESS_TOKEN_EXPIRY }
+    );
+
+    const refreshToken = jwt.sign(
+        { userId, role, type: 'refresh' },
+        JWT_REFRESH_SECRET,
+        { expiresIn: REFRESH_TOKEN_EXPIRY }
+    );
+
+    return { accessToken, refreshToken };
+}
+
+/**
+ * Hash a token for database storage
+ */
+function hashToken(token) {
+    return crypto.createHash('sha256').update(token).digest('hex');
+}
+
+/**
+ * Store refresh token in database
+ */
+async function storeRefreshToken(userId, refreshToken) {
+    try {
+        const tokenHash = hashToken(refreshToken);
+        const expiryDate = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days
+
+        await db.execute(
+            'INSERT INTO refresh_tokens (user_id, token_hash, expires_at) VALUES (?, ?, ?)',
+            [userId, tokenHash, expiryDate]
+        );
+
+        return true;
+    } catch (err) {
+        logger.error(err, 'Failed to store refresh token');
+        return false;
+    }
+}
+
+/**
+ * Verify refresh token exists in database and is not revoked
+ */
+async function verifyRefreshTokenInDb(userId, refreshToken) {
+    try {
+        const tokenHash = hashToken(refreshToken);
+        const [rows] = await db.execute(
+            'SELECT * FROM refresh_tokens WHERE user_id = ? AND token_hash = ? AND expires_at > NOW() AND revoked = FALSE',
+            [userId, tokenHash]
+        );
+
+        return rows.length > 0;
+    } catch (err) {
+        logger.error(err, 'Failed to verify refresh token in db');
+        return false;
+    }
+}
+
+/**
+ * Revoke a refresh token
+ */
+async function revokeRefreshToken(userId, refreshToken) {
+    try {
+        const tokenHash = hashToken(refreshToken);
+        await db.execute(
+            'UPDATE refresh_tokens SET revoked = TRUE WHERE user_id = ? AND token_hash = ?',
+            [userId, tokenHash]
+        );
+        return true;
+    } catch (err) {
+        logger.error(err, 'Failed to revoke refresh token');
+        return false;
+    }
+}
+
+/**
+ * Revoke all refresh tokens for a user (logout all devices)
+ */
+async function revokeAllRefreshTokens(userId) {
+    try {
+        await db.execute(
+            'UPDATE refresh_tokens SET revoked = TRUE WHERE user_id = ?',
+            [userId]
+        );
+        return true;
+    } catch (err) {
+        logger.error(err, 'Failed to revoke all refresh tokens');
+        return false;
+    }
+}
 
 async function registerUser(req, res) {
     const { email, password } = req.body;
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
         const id = crypto.randomUUID();
-        await db.execute('INSERT INTO users (id, email, password) VALUES (?, ?, ?)', [id, email, hashedPassword]);
+        await db.execute('INSERT INTO users (id, email, password, last_login) VALUES (?, ?, ?, NOW())', [id, email, hashedPassword]);
 
-        const token = jwt.sign({ userId: id, role: 'user' }, JWT_SECRET, { expiresIn: '7d' });
-        res.json({ token, userId: id, role: 'user' });
+        const { accessToken, refreshToken } = generateTokens(id, 'user');
+        await storeRefreshToken(id, refreshToken);
+
+        res.json({
+            accessToken,
+            refreshToken,
+            userId: id,
+            role: 'user',
+            expiresIn: 900 // 15 minutes in seconds
+        });
     } catch (err) {
         logger.error(err, 'registerUser failed');
         if (err.code === 'ER_DUP_ENTRY') return res.status(400).json({ error: 'Email already exists' });
@@ -33,8 +143,19 @@ async function loginUser(req, res) {
         const match = await bcrypt.compare(password, user.password);
         if (!match) return res.status(401).json({ error: 'Invalid credentials' });
 
-        const token = jwt.sign({ userId: user.id, role: user.role }, JWT_SECRET, { expiresIn: '7d' });
-        res.json({ token, userId: user.id, role: user.role });
+        // Update last login
+        await db.execute('UPDATE users SET last_login = NOW(), last_activity = NOW() WHERE id = ?', [user.id]);
+
+        const { accessToken, refreshToken } = generateTokens(user.id, user.role);
+        await storeRefreshToken(user.id, refreshToken);
+
+        res.json({
+            accessToken,
+            refreshToken,
+            userId: user.id,
+            role: user.role,
+            expiresIn: 900 // 15 minutes in seconds
+        });
     } catch (err) {
         logger.error(err, 'loginUser failed');
         res.status(500).json({ error: err.message });
@@ -89,25 +210,26 @@ async function discordCallback(req, res) {
         if (existingUsers.length > 0) {
             userId = existingUsers[0].id;
             role = existingUsers[0].role || 'user';
-            // Update their latest Discord avatar
+            // Update their latest Discord avatar and last_login
             await db.execute(
-                'UPDATE users SET discord_id = ?, avatar = ? WHERE id = ?',
+                'UPDATE users SET discord_id = ?, avatar = ?, last_login = NOW(), last_activity = NOW() WHERE id = ?',
                 [discordUser.id, discordUser.avatar, userId]
             );
         } else {
             // Create a new user
             userId = crypto.randomUUID();
             await db.execute(
-                'INSERT INTO users (id, email, discord_id, avatar, role) VALUES (?, ?, ?, ?, ?)',
+                'INSERT INTO users (id, email, discord_id, avatar, role, last_login) VALUES (?, ?, ?, ?, ?, NOW())',
                 [userId, discordUser.email, discordUser.id, discordUser.avatar, 'user']
             );
         }
 
-        // Generate your existing JWT token
-        const token = jwt.sign({ userId: userId, role }, process.env.JWT_SECRET, { expiresIn: '7d' });
+        // Generate access and refresh tokens
+        const { accessToken, refreshToken } = generateTokens(userId, role);
+        await storeRefreshToken(userId, refreshToken);
 
-        // Redirect back to your React app with the token and userId in the URL
-        res.redirect(`${process.env.FRONTEND_URL}/auth-success?token=${encodeURIComponent(token)}&userId=${userId}`);
+        // Redirect back to your React app with tokens in the URL
+        res.redirect(`${process.env.FRONTEND_URL}/auth-success?accessToken=${encodeURIComponent(accessToken)}&refreshToken=${encodeURIComponent(refreshToken)}&userId=${userId}`);
 
     } catch (error) {
         logger.error('[OAuth] Discord Login Failed:', error);
@@ -115,4 +237,118 @@ async function discordCallback(req, res) {
     }
 }
 
-module.exports = { registerUser, loginUser, discordLogin, discordCallback };
+/**
+ * Refresh access token using refresh token
+ */
+async function refreshAccessToken(req, res) {
+    try {
+        const { refreshToken } = req.body;
+
+        if (!refreshToken) {
+            return res.status(401).json({ error: 'Refresh token required' });
+        }
+
+        // Verify the refresh token signature
+        let decoded;
+        try {
+            decoded = jwt.verify(refreshToken, JWT_REFRESH_SECRET);
+        } catch (err) {
+            return res.status(401).json({ error: 'Invalid or expired refresh token' });
+        }
+
+        // Verify token exists in database and is not revoked
+        const isValid = await verifyRefreshTokenInDb(decoded.userId, refreshToken);
+        if (!isValid) {
+            return res.status(401).json({ error: 'Refresh token revoked or expired' });
+        }
+
+        // Get user info to verify they still exist
+        const [users] = await db.execute('SELECT * FROM users WHERE id = ?', [decoded.userId]);
+        if (users.length === 0) {
+            return res.status(401).json({ error: 'User not found' });
+        }
+
+        const user = users[0];
+
+        // Check for inactivity
+        const lastActivity = new Date(user.last_activity);
+        const now = new Date();
+        const inactivityDuration = now - lastActivity;
+
+        if (inactivityDuration > INACTIVITY_TIMEOUT) {
+            // User has been inactive too long, revoke all tokens and force re-login
+            await revokeAllRefreshTokens(decoded.userId);
+            return res.status(401).json({
+                error: 'Session expired due to inactivity',
+                code: 'INACTIVITY_TIMEOUT'
+            });
+        }
+
+        // Update last_activity
+        await db.execute('UPDATE users SET last_activity = NOW() WHERE id = ?', [decoded.userId]);
+
+        // Generate new access token
+        const { accessToken: newAccessToken } = generateTokens(decoded.userId, decoded.role);
+
+        res.json({
+            accessToken: newAccessToken,
+            expiresIn: 900 // 15 minutes in seconds
+        });
+    } catch (err) {
+        logger.error(err, 'refreshAccessToken failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
+/**
+ * Logout user (revoke refresh token)
+ */
+async function logoutUser(req, res) {
+    try {
+        const { refreshToken } = req.body;
+        const userId = req.user?.userId;
+
+        if (!userId) {
+            return res.status(401).json({ error: 'Not authenticated' });
+        }
+
+        if (refreshToken) {
+            // Revoke specific refresh token
+            await revokeRefreshToken(userId, refreshToken);
+        }
+
+        res.json({ message: 'Logged out successfully' });
+    } catch (err) {
+        logger.error(err, 'logoutUser failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
+/**
+ * Logout all devices (revoke all refresh tokens)
+ */
+async function logoutAllDevices(req, res) {
+    try {
+        const userId = req.user?.userId;
+
+        if (!userId) {
+            return res.status(401).json({ error: 'Not authenticated' });
+        }
+
+        await revokeAllRefreshTokens(userId);
+        res.json({ message: 'Logged out from all devices' });
+    } catch (err) {
+        logger.error(err, 'logoutAllDevices failed');
+        res.status(500).json({ error: err.message });
+    }
+}
+
+module.exports = {
+    registerUser,
+    loginUser,
+    discordLogin,
+    discordCallback,
+    refreshAccessToken,
+    logoutUser,
+    logoutAllDevices
+};

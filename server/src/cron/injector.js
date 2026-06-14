@@ -18,7 +18,8 @@ async function injectJobs() {
         const [rows] = await db.execute(`
             SELECT 
                 u.id AS userId, u.vinted_cookie AS cookie, u.user_agent AS userAgent, u.proxy_url AS proxyUrl, u.use_proxy AS useProxy,
-                k.id AS keywordId, k.name AS keywordName, k.api_url AS apiUrl
+                k.id AS keywordId, k.name AS keywordName, k.api_url AS apiUrl,
+                k.search_title AS searchTitle, k.target_brand AS targetBrand, k.target_size AS targetSize
             FROM users u
             JOIN keywords k ON u.id = k.user_id
             WHERE u.vinted_cookie IS NOT NULL AND u.vinted_cookie != ''
@@ -45,7 +46,10 @@ async function injectJobs() {
             urlBatches[row.apiUrl].subscribers.push({
                 userId: row.userId,
                 keywordId: row.keywordId,
-                keywordName: row.keywordName
+                keywordName: row.keywordName,
+                searchTitle: row.searchTitle,
+                targetBrand: row.targetBrand,
+                targetSize: row.targetSize
             });
         }
 

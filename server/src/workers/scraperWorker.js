@@ -17,88 +17,131 @@ const worker = new Worker('vinted-scan-queue', async job => {
     const isLocalNetwork = !proxyUrl;
 
     try {
-        const annonce = await scanVinted(apiUrl, cookie, userAgent, proxyUrl);
+        const annonces = await scanVinted(apiUrl, cookie, userAgent, proxyUrl);
 
-        // 1. Success, but no new items matched the tracker
-        if (annonce && annonce.empty) {
-            return;
-        }
+        // Check if the response is an error object rather than an array of items
+        if (annonces && !Array.isArray(annonces)) {
+            if (annonces.empty) return;
 
-        // 2. The cookie is officially dead
-        if (annonce && annonce.error === 'SESSION_EXPIRED') {
-            logger.warn(`[Worker] Cookie died for Delegated User ${delegatedUserId}. Stripping access.`);
-            await db.execute('UPDATE users SET vinted_cookie = NULL WHERE id = ?', [delegatedUserId]);
-            redisPub.publish('vinted-system', JSON.stringify({ userId: delegatedUserId, type: 'COOKIE_DEAD' }));
-            return;
-        }
-
-        // 3. The proxy got banned or a true crash happened
-        if (!annonce || annonce.error === 'PROXY_BANNED') {
-            const reason = !annonce ? 'returned null' : 'returned PROXY_BANNED';
-
-            if (isLocalNetwork) {
-                logger.warn(`[Worker] ⚠️ Request failed (${reason}) for Delegated User ${delegatedUserId} on LOCAL NETWORK. No rotation possible.`);
+            if (annonces.error === 'SESSION_EXPIRED') {
+                logger.warn(`[Worker] Cookie died for Delegated User ${delegatedUserId}. Stripping access.`);
+                await db.execute('UPDATE users SET vinted_cookie = NULL WHERE id = ?', [delegatedUserId]);
+                redisPub.publish('vinted-system', JSON.stringify({ userId: delegatedUserId, type: 'COOKIE_DEAD' }));
                 return;
             }
 
-            logger.warn(`[Worker] ⚠️ Proxy failed (${reason}) for Delegated User ${delegatedUserId}. Initiating auto-rotation...`);
-
-            if (process.env.PROXY_POOL) {
-                const pool = process.env.PROXY_POOL.split(',');
-                const [assignedRows] = await db.execute('SELECT proxy_url FROM users WHERE proxy_url IS NOT NULL');
-                const assignedProxies = assignedRows.map(row => row.proxy_url);
-                const availableProxies = pool.filter(proxy => !assignedProxies.includes(proxy));
-
-                if (availableProxies.length > 0) {
-                    const newProxy = availableProxies[Math.floor(Math.random() * availableProxies.length)];
-                    await db.execute('UPDATE users SET proxy_url = ? WHERE id = ?', [newProxy, delegatedUserId]);
-                    logger.info(`[Worker] Reassigned User ${delegatedUserId} to new UNIQUE proxy IP.`);
+            if (annonces.error === 'PROXY_BANNED') {
+                if (isLocalNetwork) {
+                    logger.warn(`[Worker] ⚠️ Request failed (PROXY_BANNED) for Delegated User ${delegatedUserId} on LOCAL NETWORK. No rotation possible.`);
+                    return;
                 }
+
+                logger.warn(`[Worker] ⚠️ Proxy failed for Delegated User ${delegatedUserId}. Initiating auto-rotation...`);
+
+                if (process.env.PROXY_POOL) {
+                    const pool = process.env.PROXY_POOL.split(',');
+                    const [assignedRows] = await db.execute('SELECT proxy_url FROM users WHERE proxy_url IS NOT NULL');
+                    const assignedProxies = assignedRows.map(row => row.proxy_url);
+                    const availableProxies = pool.filter(proxy => !assignedProxies.includes(proxy));
+
+                    if (availableProxies.length > 0) {
+                        const newProxy = availableProxies[Math.floor(Math.random() * availableProxies.length)];
+                        await db.execute('UPDATE users SET proxy_url = ? WHERE id = ?', [newProxy, delegatedUserId]);
+                        logger.info(`[Worker] Reassigned User ${delegatedUserId} to new UNIQUE proxy IP.`);
+                    }
+                }
+                return;
             }
-            return;
         }
 
-        // 4. A real item was found! Publish it!
-        if (annonce && !annonce.error && !annonce.empty) {
-            // Format for a single bulk query to save database connections
-            const insertValues = subscribers.map(sub => [
-                annonce.id, sub.userId, sub.keywordId, annonce.titre,
-                annonce.prix, annonce.lien, annonce.image, annonce.brand, annonce.size
-            ]);
+        // If it's a valid array of items
+        if (Array.isArray(annonces) && annonces.length > 0) {
+            const insertValues = [];
+            const matchedHits = [];
 
-            // Execute ONE query for all subscribers
-            const [result] = await db.query(
-                `INSERT IGNORE INTO items 
-                (id, user_id, keyword_id, title, price, url, image_url, brand, size) 
-                VALUES ?`,
-                [insertValues]
-            );
-
-            if (result.affectedRows > 0) {
-                // Blast to Discord marketing channel (uncomment if you are using it)
-                if (sendTeaserWebhook) {
-                    sendTeaserWebhook({
-                        title: annonce.titre, price: annonce.prix,
-                        brand: annonce.brand, size: annonce.size, imageUrl: annonce.image
-                    });
-                }
-
-                // Notify all active users on the frontend
+            // Loop through EVERY item Vinted returned
+            for (const annonce of annonces) {
+                // Evaluate the specific item against each subscriber's strict filters
                 for (const sub of subscribers) {
-                    logger.info(`🎯 HIT! [${sub.keywordName}] for User ${sub.userId} : ${annonce.titre}`);
-                    redisPub.publish('vinted-drops', JSON.stringify({
-                        userId: sub.userId,
-                        item: {
-                            id: annonce.id,
-                            title: annonce.titre,
-                            price: annonce.prix,
-                            url: annonce.lien,
-                            imageUrl: annonce.image,
-                            brand: annonce.brand,
-                            size: annonce.size,
-                            platform: 'Vinted'
+                    let isMatch = true;
+
+                    // 1. Strict Title Check
+                    if (sub.searchTitle && !annonce.titre.toLowerCase().includes(sub.searchTitle.toLowerCase())) {
+                        isMatch = false;
+                    }
+
+                    // 2. Strict Brand Check
+                    if (isMatch && sub.targetBrand && annonce.brand.toLowerCase() !== sub.targetBrand.toLowerCase()) {
+                        isMatch = false;
+                    }
+
+                    // 3. Flexible Size Check
+                    if (isMatch && sub.targetSize) {
+                        const itemSizeStr = annonce.size.toLowerCase();
+                        const targetSizeStr = sub.targetSize.toLowerCase();
+
+                        try {
+                            const sizeRegex = new RegExp(`\\b${targetSizeStr}\\b`, 'i');
+                            if (!sizeRegex.test(itemSizeStr)) {
+                                isMatch = false;
+                            }
+                        } catch (e) {
+                            if (!itemSizeStr.includes(targetSizeStr)) {
+                                isMatch = false;
+                            }
                         }
-                    }));
+                    }
+
+                    // If the item passes all filters for this user, queue it up
+                    if (isMatch) {
+                        insertValues.push([
+                            annonce.id, sub.userId, sub.keywordId, annonce.titre,
+                            annonce.prix, annonce.lien, annonce.image, annonce.brand, annonce.size
+                        ]);
+                        // Store both the user who needs the alert and the specific item that triggered it
+                        matchedHits.push({ sub, annonce });
+                    }
+                }
+            }
+
+            // Execute database query and publish events
+            if (insertValues.length > 0) {
+                const [result] = await db.query(
+                    `INSERT IGNORE INTO items 
+                    (id, user_id, keyword_id, title, price, url, image_url, brand, size) 
+                    VALUES ?`,
+                    [insertValues]
+                );
+
+                // Only blast notifications if new rows were actually added (prevents duplicate alerts on consecutive scans)
+                if (result.affectedRows > 0) {
+                    for (const hit of matchedHits) {
+                        const { sub, annonce } = hit;
+
+                        // Blast to Discord marketing channel
+                        if (sendTeaserWebhook) {
+                            sendTeaserWebhook({
+                                title: annonce.titre, price: annonce.prix,
+                                brand: annonce.brand, size: annonce.size, imageUrl: annonce.image
+                            });
+                        }
+
+                        // Send to the React Dashboard
+                        logger.info(`🎯 STRICT HIT! [${sub.keywordName}] for User ${sub.userId} : ${annonce.titre}`);
+                        redisPub.publish('vinted-drops', JSON.stringify({
+                            userId: sub.userId,
+                            item: {
+                                id: annonce.id,
+                                title: annonce.titre,
+                                price: annonce.prix,
+                                url: annonce.lien,
+                                imageUrl: annonce.image,
+                                brand: annonce.brand,
+                                size: annonce.size,
+                                platform: 'Vinted'
+                            }
+                        }));
+                    }
                 }
             }
         }
